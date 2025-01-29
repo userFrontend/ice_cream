@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --site-color: #1d5c9f;
+  --poster: #7e7575;
+  --green: #16cd1f;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: white;
+  font-family: "Inter";
+  user-select: none;
+}
+
+.container {
+  max-width: 450px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--site-color);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}

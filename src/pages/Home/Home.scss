@@ -1,0 +1,92 @@
+main{
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 15px 0;
+        background-color: var(--site-color);
+        height: 145px;
+        overflow: hidden;
+        img{
+            margin-top: 10px;
+            height: 200px;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    .information{
+        text-align: center;
+        font-size: 17px;
+        margin: 30px 0;
+    }
+    .menu{
+        h3{
+            font-size: 18px;
+        }
+        .menu-list{
+            list-style-type: none;
+            margin: 10px 0;
+            li{
+                margin: 17px 0;
+                a{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.474);
+                    padding: 16px 20px;
+                    border-radius: 30px;
+                    font-weight: bold;
+                    img{
+                        height: 30px;
+                        width: 30px;
+                        object-fit: contain;
+                    }
+                    .title{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                    }
+                    .icon{
+                        height: 25px;
+                        width: 25px;
+                        color: var(--site-color);
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 428px) { 
+        .menu-list{
+            // margin-bottom: 80px !important;
+            li{
+                margin: 16px 0 !important;
+                a{
+                    padding: 14px 20px;
+                }
+            }
+        }
+    }
+    @media(max-height: 740px) { 
+        .menu-list{
+            margin-bottom: 80px !important;
+        }
+        .information{
+            text-align: center;
+            font-size: 13px;
+            margin: 17px 0;
+        }
+    }
+    @media(max-height: 820px) { 
+        .menu-list{
+            margin-bottom: 140px !important;
+        }
+        .information{
+            text-align: center;
+            font-size: 13px;
+            margin: 17px 0;
+        }
+    }
+}
