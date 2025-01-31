@@ -1,5 +1,26 @@
 .header {
-   position: sticky;
+   position: fixed;
    top: 0;
    left: 0;
+   right: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   pointer-events: none;
+   z-index: 3;
+   .header-left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: calc(var(--offset)* 5);
+      padding-top: var(--offset);
+      padding-bottom: var(--offset);
+   }
+   .header-right{
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      pointer-events: auto;
+      height: calc(var(--offset)* 5);
+   }
 }
