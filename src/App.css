@@ -9,9 +9,15 @@
 }
 
 :root {
-  --site-color: #1d5c9f;
-  --poster: #7e7575;
-  --green: #16cd1f;
+  --offset: max(calc(1.25 * 1vw), 15px);
+  --offset-xl: calc(var(--offset) * 10);
+  --offset-l: calc(var(--offset) * 6);
+  --offset-m: calc(var(--offset) * 4);
+  --ff: "Nunito", sans-serif;
+  --fz: 1vw;
+  --fwBold: 700;
+  --fwRegular: 400;
+  --fwBlack: 900;
 }
 
 body,
@@ -35,7 +41,6 @@ button {
   border: none;
   outline: none;
 }
-
 
 input[type="checkbox"],
 input[type="radio"] {
