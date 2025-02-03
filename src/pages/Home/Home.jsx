@@ -1,7 +1,27 @@
 import "./Home.scss";
 import Icons from "../../utils/utils";
+import Slider from "react-slick";
 
 const Home = () => {
+  const settings1 = {
+    infinite: true, // Cheksiz aylanish
+    slidesToShow: 8, // Bir vaqtning o'zida 1 slayd
+    slidesToScroll: 1,
+    autoplay: true, // Avtomatik aylanish
+    speed: 1000,
+    autoplaySpeed: 1000,
+    cssEase: "linear"
+  };
+  const settings2 = {
+    rtl:true,
+    infinite: true, // Cheksiz aylanish
+    slidesToShow: 8, // Bir vaqtning o'zida 1 slayd
+    slidesToScroll: 1,
+    autoplay: true, // Avtomatik aylanish
+    speed: 1000,
+    autoplaySpeed: 1000,
+    cssEase: "linear"
+  };
   return (
     <>
       <section className="first">
@@ -46,11 +66,118 @@ const Home = () => {
         <div className="container third-container">
           <div className="third-container__up">
             <h1 data-aos="fade-right">{">15"} </h1>
-            <h3 data-aos="fade-left" > 
+            <h3 data-aos="fade-left">
               O‘zbekistonda 15 dan ortiq yetakchi brendlar
             </h3>
           </div>
-          <div className="third-container__down" >
+          <div className="third-container__down">
+            <Slider {...settings1}>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+            </Slider>
+            <Slider {...settings2}>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+              <div>
+                <img src="/images/logo.png" alt="Slide 1" />
+              </div>
+            </Slider>
+    
           </div>
         </div>
       </section>

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -53,7 +52,7 @@ const Footer = () => {
             aloqaga chiqadi.
           </p>
           <div className="footer-feedback__row">
-            <a href="feedback" aria-label="Biz bilan bog‘lanish"><svg width="56" height="16" aria-hidden="true"><use xlink:href="#icon-arrow-right"></use></svg></a>
+            <a href="feedback" aria-label="Biz bilan bog‘lanish"><svg width="56" height="16" aria-hidden="true"><use xlinkHref="#icon-arrow-right"></use></svg></a>
           </div>
         </section>
       </div>
