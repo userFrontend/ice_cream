@@ -28,6 +28,7 @@ html {
   background-color: white;
   font-family: "Inter";
   user-select: none;
+  height: 100vh;
 }
 
 #root {
