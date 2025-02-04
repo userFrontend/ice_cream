@@ -6,21 +6,19 @@ const Home = () => {
   const settings1 = {
     infinite: true, // Cheksiz aylanish
     slidesToShow: 8, // Bir vaqtning o'zida 1 slayd
-    slidesToScroll: 1,
     autoplay: true, // Avtomatik aylanish
     speed: 1000,
     autoplaySpeed: 1000,
-    cssEase: "linear"
+    cssEase: "linear", // Bir vaqtning o‘zida nechta slayd siljishini belgilash
   };
   const settings2 = {
-    rtl:true,
+    rtl: true,
     infinite: true, // Cheksiz aylanish
     slidesToShow: 8, // Bir vaqtning o'zida 1 slayd
-    slidesToScroll: 1,
     autoplay: true, // Avtomatik aylanish
     speed: 1000,
     autoplaySpeed: 1000,
-    cssEase: "linear"
+    cssEase: "linear",
   };
   return (
     <>
@@ -48,9 +46,6 @@ const Home = () => {
             <p data-aos="fade-up">
               bozorda 20 yildan ortiq tajriba <br />
             </p>
-            <a href="/" data-aos="fade-up">
-              batafsil <Icons.rightArrow />
-            </a>
           </div>
           <div className="second-container__right" data-aos="fade-up">
             <h3>
@@ -70,7 +65,7 @@ const Home = () => {
               O‘zbekistonda 15 dan ortiq yetakchi brendlar
             </h3>
           </div>
-          <div className="third-container__down">
+          <div data-aos="fade-up" className="third-container__down">
             <Slider {...settings1}>
               <div>
                 <img src="/images/logo.png" alt="Slide 1" />
@@ -177,7 +172,40 @@ const Home = () => {
                 <img src="/images/logo.png" alt="Slide 1" />
               </div>
             </Slider>
-    
+          </div>
+        </div>
+      </section>
+      <section className="fourth">
+        <div className="container fourth-container">
+          <div className="fourth-container__title">
+            <h1 data-aos="fade-right">Hamkorlarimiz </h1>
+            <a href="/" data-aos="fade-left">
+            batafsil <Icons.rightArrow />
+
+            </a>
+          </div>
+          <div data-aos="fade-up" className="fourth-container__wrapper">
+            <a href="/">
+              <img src="/images/logo.png" alt="Slide 1" />
+              <p>www.akhmedov.uz</p>
+            </a>
+            <a href="/">
+              <img src="/images/logo.png" alt="Slide 1" />
+              <p>www.akhmedov.uz</p>
+            </a>
+            <a href="/">
+              <img src="/images/logo.png" alt="Slide 1" />
+              <p>www.akhmedov.uz</p>
+            </a>
+            <a href="/">
+              <img src="/images/logo.png" alt="Slide 1" />
+              <p>www.akhmedov.uz</p>
+            </a>
+            <a href="/">
+              <img src="/images/logo.png" alt="Slide 1" />
+              <p>www.akhmedov.uz</p>
+            </a>
+            
           </div>
         </div>
       </section>
