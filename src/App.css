@@ -8,6 +8,7 @@
   display: none;
 }
 
+
 :root {
   --offset: max(calc(1.25 * 1vw), 15px);
   --offset-xl: calc(var(--offset) * 10);

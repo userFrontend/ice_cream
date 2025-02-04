@@ -27,7 +27,7 @@
           font-size: 16px;
 
           &:hover {
-            color: #007bff;
+            color: #6D5A95;
           }
         }
 
@@ -41,7 +41,7 @@
             font-size: 14px;
 
             &:hover {
-              color: #007bff;
+              color: #6D5A95;
             }
           }
         }
@@ -53,13 +53,13 @@
       margin-bottom: 0;
       padding-top: 70px;
       font-size: 14px;
-      color: #6e6e6e;
+      color: #fffefe;
       line-height: 1.6;
     }
   }
 
   .footer__right {
-    background: #ADD8E6;
+    background: #6D5A95;
     width: 50%;
     margin-top: calc(0px - 110px);
     color: white;
@@ -72,28 +72,28 @@
       .title {
         font-size: 20px;
         font-weight: bold;
-        color: #333;
+        color: #ffffff;
         margin-bottom: 15px;
       }
 
       p {
         font-size: 14px;
-        color: #666;
+        color: #ffffff;
         margin-bottom: 20px;
       }
 
-      .footer-feedback__row {
+      &__row {
         a {
           display: inline-block;
           padding: 10px 20px;
-          background-color: #007bff;
+          background-color: #42375c;
           color: #fff;
           text-decoration: none;
           border-radius: 5px;
           font-size: 14px;
 
           &:hover {
-            background-color: #0056b3;
+            background-color: #4e406c;
           }
 
           svg {
@@ -101,6 +101,38 @@
             vertical-align: middle;
             margin-left: 10px;
           }
+        }
+        i{
+          margin-left: 10px;
+        }
+      }
+      
+    }
+    .footer-row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: var(--offset-m);
+      .social{
+        display: flex;
+        align-items: center;
+        &__name{
+          margin-right: var(--offset);
+          font-weight: var(--fwRegular);
+          font-size: .85em;
+          line-height: 1.4;
+          color: #ffffff;
+        }
+        &__list{
+          display: flex;
+          align-items: center;
+          list-style: none;
+          gap: 10px;
+          margin: 0;
+          padding: 0;
+        }
+        &__list a{
+          color: #ffffff;
         }
       }
     }
