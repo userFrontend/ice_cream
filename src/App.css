@@ -28,10 +28,22 @@ html {
   background-color: white;
   font-family: "Inter";
   user-select: none;
+  min-height: 100vh;
 }
 
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  margin: 120px 0 150px 0;
+  flex: 1;
+}
+
+
 .container {
-  max-width: 450px;
+  max-width: 1300px;
   padding: 0 20px;
   margin: 0 auto;
 }

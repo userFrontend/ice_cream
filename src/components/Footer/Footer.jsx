@@ -1,9 +1,9 @@
-import React from "react";
 import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer className="container footer__container">
+    <footer>
+      <div className="footer__container">
       <div className="footer__left">
         <div className="footer-menu__wrap">
           <div className="footer-menu">
@@ -52,9 +52,10 @@ const Footer = () => {
             aloqaga chiqadi.
           </p>
           <div className="footer-feedback__row">
-            <a href="feedback" aria-label="Biz bilan bog‘lanish"><svg width="56" height="16" aria-hidden="true"><use xlink:href="#icon-arrow-right"></use></svg></a>
+            <a href="feedback" aria-label="Biz bilan bog‘lanish"><svg width="56" height="16" aria-hidden="true"><use xlinkHref="#icon-arrow-right"></use></svg></a>
           </div>
         </section>
+      </div>
       </div>
     </footer>
   );

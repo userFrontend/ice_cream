@@ -1,20 +1,22 @@
 .footer__container {
   display: flex;
-  justify-content: space-between;
-  padding: 40px 20px;
-  background-color: #f5f5f5;
-  border-top: 1px solid #e0e0e0;
-
+  align-items: stretch;
+  background-color: #f9f9f9;  
+  position: relative;
   .footer__left {
-    flex: 1;
-    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 60px 100px 30px 120px;
 
     .footer-menu__wrap {
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
 
       .footer-menu {
-        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
 
         .footer-menu__name {
           font-weight: bold;
@@ -47,17 +49,26 @@
     }
 
     .footer-copyright {
-      margin-top: 30px;
+      margin-top: auto;
+      margin-bottom: 0;
+      padding-top: 70px;
       font-size: 14px;
-      color: #666;
+      color: #6e6e6e;
+      line-height: 1.6;
     }
   }
 
   .footer__right {
-    flex: 1;
-    max-width: 300px;
-
+    background: #ADD8E6;
+    width: 50%;
+    margin-top: calc(0px - 110px);
+    color: white;
+    border-top-left-radius: 15vh;
+    padding: 165px 183px 36px 110px;
     .footer-feedback {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
       .title {
         font-size: 20px;
         font-weight: bold;
