@@ -11,7 +11,7 @@
    .header-left {
       display: flex;
       justify-content: flex-start;
-      align-items: center;
+      align-items: center; 
       height: calc(var(--offset)* 5);
       padding-top: var(--offset);
       padding-bottom: var(--offset);
@@ -55,11 +55,45 @@
      }
      .nav-opener {
       position: relative;
-      display: flex
-  ;
+      display: flex;
       width: calc(var(--offset)* 12);
       height: calc(var(--offset)* 4.2);
       pointer-events: auto;
-  }
+      }
+      .header-right__inner {
+         display: flex;
+         justify-content: flex-end;
+         align-items: flex-start;
+         height: 100%;
+     }
+     .header-search {
+         display: flex;
+         align-items: center;
+         width: calc(var(--offset)* 1.5);
+         height: calc(var(--offset)* 1.5);
+         margin-top: auto;
+         margin-right: calc(var(--offset)* 2);
+         margin-bottom: auto;
+         padding: calc(var(--offset)* .3);
+         transition: all .15s ease-in-out;
+      }
+      .lang-wrapper {
+         position: relative;
+         display: flex;
+         align-items: center;
+         margin-top: auto;
+         margin-right: calc(var(--offset)* 2);
+         margin-bottom: auto;
+         transition: all .15s ease-in-out;
+      }
+      .header-phone {
+         margin-top: auto;
+         margin-bottom: auto;
+         font-weight: var(--fwBold);
+         font-size: .95em;
+         line-height: 1.4;
+         color: var(--c1);
+         transition: all .15s ease-in-out, color .3s ease-in-out;
+     }
    }
 }
