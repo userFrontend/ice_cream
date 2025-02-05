@@ -35,6 +35,7 @@
 }
 
 .holding {
+  margin-bottom: 120px;
   &-container {
     display: flex;
     justify-content: space-between;
@@ -58,7 +59,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      
+      gap: 30px;
       width: 50%;padding-left: 80px;
       h1 {
         font-size: 3rem;
@@ -70,6 +71,19 @@
         font-size: 1.5rem;
         font-weight: 700;
         color: #6e6e6e;
+      }
+      a{
+        display: flex;
+        width: 100%;
+        font-weight: 600;
+        color: purple;
+        font-size: 1.5rem;
+        gap: 20px;
+        align-items: center;
+        transition: all 0.5s ease;
+        &:hover {
+         gap: 30px;
+        }
       }
     }
   }
@@ -131,8 +145,13 @@
       a {
         display: flex;
         align-items: center;
-        height: 24px;
-        gap: 10px;
+        font-size: 24px;
+        color: purple;
+        gap: 20px;
+        transition: all 0.5s ease;
+        &:hover {
+         gap: 30px;
+        }
       }
     }
     &__right {

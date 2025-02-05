@@ -1,3 +1,4 @@
+import Icons from "../../utils/utils";
 import "./About.scss";
 import Slider from "react-slick";
 
@@ -76,6 +77,9 @@ const About = () => {
               guruhidan iborat va u O‘zbekiston oziq-ovqat sanoatida
               yetakchilardan biri hisoblanadi`}
             </p>
+            <a href="/">
+            xolding tuzilmasi <Icons.rightArrow />
+            </a>
           </div>
         </div>
       </section>
@@ -205,7 +209,7 @@ const About = () => {
               bozorda 20 yildan ortiq tajriba <br />
             </p>
             <a href="/" data-aos="fade-up">
-              batafsil
+              batafsil <Icons.rightArrow />
             </a>
           </div>
           <div className="messiya-container__right" data-aos="fade-up">

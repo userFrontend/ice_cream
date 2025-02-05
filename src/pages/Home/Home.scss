@@ -23,7 +23,11 @@
         height: 24px;
         font-size: 24px;
         color: purple;
-        gap: 10px;
+        gap: 20px;
+        transition: all 0.5s ease;
+        &:hover {
+         gap: 30px;
+        }
       }
     }
     &__right {
@@ -127,11 +131,15 @@
       a {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
         font-weight: 700;
         font-size: 24px;
         color: purple;
         margin-bottom: 20px;
+        transition: all 0.5s ease;
+        &:hover {
+         gap: 30px;
+        }
       }
     }
     &__wrapper {
