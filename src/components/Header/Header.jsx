@@ -22,7 +22,7 @@ export default function Header() {
           <li className="header-menu__item">
             <a
               className="header-menu__link"
-              href="https://nmedov.uz/ru/about/"
+              href="/about"
               data-section="about"
             >
               О холдинге

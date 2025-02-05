@@ -1,28 +1,26 @@
-import React from "react";
 import "./About.scss";
 import Slider from "react-slick";
 
-
-const Home = () => {
-    const settings1 = {
-        infinite: true, // Cheksiz aylanish
-        slidesToShow: 8, // Bir vaqtning o'zida 1 slayd
-        slidesToScroll: 1,
-        autoplay: true, // Avtomatik aylanish
-        speed: 1000,
-        autoplaySpeed: 1000,
-        cssEase: "linear"
-      };
-      const settings2 = {
-        rtl:true,
-        infinite: true, // Cheksiz aylanish
-        slidesToShow: 8, // Bir vaqtning o'zida 1 slayd
-        slidesToScroll: 1,
-        autoplay: true, // Avtomatik aylanish
-        speed: 1000,
-        autoplaySpeed: 1000,
-        cssEase: "linear"
-      };    
+const About = () => {
+  const settings1 = {
+    infinite: true, // Cheksiz aylanish
+    slidesToShow: 8, // Bir vaqtning o'zida 1 slayd
+    slidesToScroll: 1,
+    autoplay: true, // Avtomatik aylanish
+    speed: 1000,
+    autoplaySpeed: 1000,
+    cssEase: "linear",
+  };
+  const settings2 = {
+    rtl: true,
+    infinite: true, // Cheksiz aylanish
+    slidesToShow: 8, // Bir vaqtning o'zida 1 slayd
+    slidesToScroll: 1,
+    autoplay: true, // Avtomatik aylanish
+    speed: 1000,
+    autoplaySpeed: 1000,
+    cssEase: "linear",
+  };
   return (
     <>
       <section className="second">
@@ -36,6 +34,48 @@ const Home = () => {
           </div>
           <div className="second-container__right" data-aos="fade-up">
             <img src="/images/choco.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section className="holding" data-aos="fade-up">
+        <div className="container holding-container">
+          <div className="holding-container__wrapper">
+            <div className="holding-container__wrapper__item">
+              <h2>Rojok</h2>
+              <p>
+                «ESTELLO», «VALENCIA», «MORELIA», «KARAVAN» va boshqa shokolad
+                konfetlarini ishlab chiqarish.
+              </p>
+            </div>
+            <div className="holding-container__wrapper__item">
+              <h2>Rojok</h2>
+              <p>
+                «ESTELLO», «VALENCIA», «MORELIA», «KARAVAN» va boshqa shokolad
+                konfetlarini ishlab chiqarish.
+              </p>
+            </div>
+            <div className="holding-container__wrapper__item">
+              <h2>Rojok</h2>
+              <p>
+                «ESTELLO», «VALENCIA», «MORELIA», «KARAVAN» va boshqa shokolad
+                konfetlarini ishlab chiqarish.
+              </p>
+            </div>
+            <div className="holding-container__wrapper__item">
+              <h2>Rojok</h2>
+              <p>
+                «ESTELLO», «VALENCIA», «MORELIA», «KARAVAN» va boshqa shokolad
+                konfetlarini ishlab chiqarish.
+              </p>
+            </div>
+          </div>
+          <div className="holding-container__description">
+            <h1>Xolding haqida</h1>
+            <p>
+              {`"AKHMEDOV" nomidagi yirik xolding kompaniyasi kompaniyalar
+              guruhidan iborat va u O‘zbekiston oziq-ovqat sanoatida
+              yetakchilardan biri hisoblanadi`}
+            </p>
           </div>
         </div>
       </section>
@@ -154,7 +194,6 @@ const Home = () => {
                 <img src="/images/logo.png" alt="Slide 1" />
               </div>
             </Slider>
-    
           </div>
         </div>
       </section>
@@ -183,4 +222,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default About;
