@@ -24,10 +24,7 @@
         font-size: 24px;
         color: purple;
         gap: 20px;
-        transition: all 0.5s ease;
-        &:hover {
-         gap: 30px;
-        }
+    
       }
     }
     &__right {
@@ -136,10 +133,6 @@
         font-size: 24px;
         color: purple;
         margin-bottom: 20px;
-        transition: all 0.5s ease;
-        &:hover {
-         gap: 30px;
-        }
       }
     }
     &__wrapper {

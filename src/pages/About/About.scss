@@ -80,10 +80,6 @@
         font-size: 1.5rem;
         gap: 20px;
         align-items: center;
-        transition: all 0.5s ease;
-        &:hover {
-         gap: 30px;
-        }
       }
     }
   }
@@ -148,10 +144,7 @@
         font-size: 24px;
         color: purple;
         gap: 20px;
-        transition: all 0.5s ease;
-        &:hover {
-         gap: 30px;
-        }
+
       }
     }
     &__right {
