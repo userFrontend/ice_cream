@@ -8,78 +8,77 @@ const Footer = () => {
           <div className="footer-menu__wrap">
             <div className="footer-menu">
               <a href="/about" className="footer-menu__name">
-                Xolding haqida
+                О холдинге
               </a>
               <ul className="footer-menu__list">
-                <li className="footer-menu__item">Bizning missiya</li>
-                <li className="footer-menu__item">Xolding tarixi</li>
-                <li className="footer-menu__item">Bizning loyihalar</li>
+                <li className="footer-menu__item">Наша миссия</li>
+                <li className="footer-menu__item">История холдинга</li>
+                <li className="footer-menu__item">Наши проекты</li>
               </ul>
               <a href="/about" className="footer-menu__name">
-                Bog'lanish
+                Контакты
               </a>
             </div>
             <div className="footer-menu">
               <a href="/about" className="footer-menu__name">
-                Mahsulotlar ro'yhati
+                Список продуктов
               </a>
               <ul className="footer-menu__list">
-                <li className="footer-menu__item">Bizning missiya</li>
-                <li className="footer-menu__item">Xolding tarixi</li>
-                <li className="footer-menu__item">Bizning loyihalar</li>
+                <li className="footer-menu__item">Наша миссия</li>
+                <li className="footer-menu__item">История холдинга</li>
+                <li className="footer-menu__item">Наши проекты</li>
               </ul>
               <a href="/about" className="footer-menu__name">
-                Hamkorlik
+                Партнерство
               </a>
               <ul className="footer-menu__list">
-                <li className="footer-menu__item">Xolding hamkorlari</li>
-                <li className="footer-menu__item">Tenderlar</li>
-                <li className="footer-menu__item">Sotuv shartlari</li>
+                <li className="footer-menu__item">Партнеры холдинга</li>
+                <li className="footer-menu__item">Тендеры</li>
+                <li className="footer-menu__item">Условия продаж</li>
               </ul>
             </div>
             <div className="footer-menu"></div>
           </div>
           <p className="footer-copyright">
-            Sayt materiallaridan foydalanishga faqat manbani ko‘rsatgan holda
-            ruxsat etiladi. © 2002 - 2025 Xolding «AKHMEDOV»
+            Использование материалов сайта разрешается только при указании
+            источника. © 2002 - 2025 Холдинг «AKHMEDOV»
           </p>
         </div>
         <div className="footer__right">
           <section className="footer-feedback">
-            <h2 className="title">Biz bilan bog'lanish</h2>
+            <h2 className="title">Свяжитесь с нами</h2>
             <p>
-              Bog‘lanish formasini to‘ldiring, bizning menejer siz bilan
-              aloqaga chiqadi.
+              Заполните форму, и наш менеджер свяжется с вами.
             </p>
             <div className="footer-feedback__row">
               <a href="contact">
-              Biz bilan bog‘lanish
-              <i class='bx bx-right-arrow-alt'></i>
+                Связаться с нами
+                <i class="bx bx-right-arrow-alt"></i>
               </a>
             </div>
           </section>
-          <div class="footer-row">
-            <div class="social">
-              <strong class="social__name">Biz ijtimoiy tarmoqlardamiz:</strong>
-              <ul class="social__list">
-                <li class="social__item">
+          <div className="footer-row">
+            <div className="social">
+              <strong className="social__name">Мы в социальных сетях:</strong>
+              <ul className="social__list">
+                <li className="social__item">
                   <a
-                    class="social-link"
+                    className="social-link"
                     href="https://www.instagram.com/"
                     target="_blank"
                     rel="noopener nofollow"
-                    aria-label="Our page in Instagram"
+                    aria-label="Наша страница в Instagram"
                   >
                     <RiInstagramFill />
                   </a>
                 </li>
-                <li class="social__item">
+                <li className="social__item">
                   <a
-                    class="social-link"
+                    className="social-link"
                     href="https://www.t.me/"
                     target="_blank"
                     rel="noopener nofollow"
-                    aria-label="Our page in Youtube"
+                    aria-label="Наша страница в Telegram"
                   >
                     <RiTelegramFill />
                   </a>
@@ -87,8 +86,9 @@ const Footer = () => {
               </ul>
             </div>
 
-            <a class="footer-scrolling" href="#home">
-            <i class='bx bx-lg bx-up-arrow-alt bx-fade-up' ></i>            </a>
+            <a className="footer-scrolling" href="#home">
+              <i class="bx bx-lg bx-up-arrow-alt bx-fade-up"></i>
+            </a>
           </div>
         </div>
       </div>
