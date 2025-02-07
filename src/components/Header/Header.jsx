@@ -40,6 +40,13 @@ const Header = () => {
                 <NavLink to='/' onClick={toggleMenu}>Контакты</NavLink>
                 <Link to='tel:501117733' className="phone">50 111 77 33</Link>
             </div>
+
+            <div className="media-mobile">
+                <NavLink to='/'><i className='bx bx-home-smile' ></i> Домой</NavLink>
+                <NavLink to='/'><i className='bx bx-package' ></i> О холдинге</NavLink>
+                <NavLink to='/'><i className='bx bx-basket'></i> Продукция</NavLink>
+                <NavLink to='/'><i className='bx bx-universal-access' ></i> Контакты</NavLink>
+            </div>
         </header>
     );
 };
