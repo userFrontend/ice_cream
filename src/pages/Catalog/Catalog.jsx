@@ -5,14 +5,14 @@ const Catalog = () => {
     <>
       <sectiion className="catalog">
         <div className="container catalog-container">
-          <h1 className="catalog-container__title">{`Mahsulotlar ro'yhati`}</h1>
-          <div className="catalog-container__wrapper">
+          <h1 data-aos="fade-left" className="catalog-container__title">{`Mahsulotlar ro'yhati`} <a href="/">yuklash<i className='bx bx-down-arrow-alt'></i></a></h1>
+          <div data-aos="fade-up" className="catalog-container__wrapper">
             <h1 className="catalog-container__wrapper__title">Muzqaymoqlar</h1>
-            <div className="catalog-container__wrapper__box">
+            <div data-aos="fade-up" className="catalog-container__wrapper__box">
               <h2 className="catalog-container__wrapper__box__subtitle">
                 Kreasy Max
               </h2>
-              <div className="catalog-container__wrapper__box__row">
+              <div data-aos="fade-up" className="catalog-container__wrapper__box__row">
                 <a
                   href="/catalog"
                   className="catalog-container__wrapper__box__row__item"
@@ -78,7 +78,7 @@ const Catalog = () => {
                 </a>
               </div>
             </div>
-            <div className="catalog-container__wrapper__box">
+            <div data-aos="fade-up" className="catalog-container__wrapper__box">
               <h2 className="catalog-container__wrapper__box__subtitle">
                 Rojok
               </h2>
@@ -142,9 +142,9 @@ const Catalog = () => {
               </div>
             </div>
           </div>
-          <div className="catalog-container__wrapper">
+          <div data-aos="fade-up" className="catalog-container__wrapper">
             <h1 className="catalog-container__wrapper__title">Siroklar</h1>
-            <div className="catalog-container__wrapper__box">
+            <div data-aos="fade-up" className="catalog-container__wrapper__box">
               <h2 className="catalog-container__wrapper__box__subtitle">
                 Sirok Batoncha
               </h2>
@@ -200,11 +200,11 @@ const Catalog = () => {
                 </a>
               </div>
             </div>
-            <div className="catalog-container__wrapper__box">
+            <div data-aos="fade-up" className="catalog-container__wrapper__box">
               <h2 className="catalog-container__wrapper__box__subtitle">
                 Sirok Mockup
               </h2>
-              <div className="catalog-container__wrapper__box__row">
+              <div data-aos="fade-up" className="catalog-container__wrapper__box__row">
                 <a
                   href="/catalog"
                   className="catalog-container__wrapper__box__row__item"
