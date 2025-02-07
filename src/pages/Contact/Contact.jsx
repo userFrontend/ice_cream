@@ -75,10 +75,10 @@ const Home = () => {
      </div>
      <div className="contact-form-container">
       <div className="container">
-      <h2>Связаться с нами</h2>
+      <h2 data-aos="fade-right">Связаться с нами</h2>
       <form onSubmit={handleSubmit} className="form-contact">
         <div className="contact-form">
-        <div className="form-group">
+        <div className="form-group" data-aos="fade-up">
           <label>Ваше имя</label>
           <input
             type="text"
@@ -88,7 +88,7 @@ const Home = () => {
             onChange={handleChange}
           />
         </div>
-        <div className="form-group">
+        <div className="form-group" data-aos="fade-up">
           <label>Номер телефона</label>
           <input
             type="tel"
@@ -98,7 +98,7 @@ const Home = () => {
             onChange={handleChange}
           />
         </div>
-        <div className="form-group">
+        <div className="form-group" data-aos="fade-up">
           <label>Электронная почта</label>
           <input
             type="email"
@@ -108,7 +108,7 @@ const Home = () => {
             onChange={handleChange}
           />
         </div>
-        <div className="form-group">
+        <div className="form-group" data-aos="fade-up">
           <label>Тема сообщения</label>
           <input
             type="text"
@@ -119,7 +119,7 @@ const Home = () => {
           />
         </div>
         </div>
-        <div className="form-group">
+        <div className="form-groups" data-aos="fade-up">
           <label>Сообщение</label>
           <textarea
             name="message"
@@ -128,12 +128,9 @@ const Home = () => {
             onChange={handleChange}
           />
         </div>
-        <div className="form-buttom">
-          <button type="submit" className="submit-button">
-            Отправить
-          </button>
-          <p>Отправляя заявку, я соглашаюсь на обработку <span>персональных данных</span></p>
-        </div>
+        <button data-aos="zoom-in" type="submit" className="submit-button">
+          Отправить
+        </button>
       </form>
       </div>
     </div>

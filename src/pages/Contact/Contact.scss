@@ -16,6 +16,9 @@ $animation-duration: 6s;
             padding: 20px 0;
         }
     }
+    .info-contact{
+        margin-bottom: 100px;
+    }
     .contact-form-container {
         margin: 100px 0;
         .contact-form {
@@ -25,10 +28,14 @@ $animation-duration: 6s;
             width: 100%;
         }
         
-        .form-group {
+        .form-group, .form-groups {
             display: flex;
             flex-direction: column;
             gap: 10px;
+        }
+
+        .form-groups{
+            margin: 20px 0;
         }
         
         textarea {
@@ -52,26 +59,20 @@ $animation-duration: 6s;
           outline: none;
           border-color: #007bff;
         }
-        .form-buttom{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            gap: 100px;
-            button {
-              grid-column: span 2;
-              padding: 10px 20px;
-              border: none;
-              background-color: #007bff;
-              color: white;
-              border-radius: 4px;
-              cursor: pointer;
-            }
-            
-            button:hover {
-              background-color: #0056b3;
-            }
+        button {
+          grid-column: span 2;
+          padding: 15px 25px;
+          border: none;
+          background-color: #007bff;
+          color: white;
+          border-radius: 4px;
+          width: 25%;
+          cursor: pointer;
         }
         
+        button:hover {
+          background-color: #0056b3;
+        }        
       }
       
     .wave-content {
