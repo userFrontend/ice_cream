@@ -1,8 +1,142 @@
-import React from "react";
+import React, { useState } from "react";
+import './Contact.scss'
 const Home = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Data Submitted:", formData);
+    // Add your API request logic here
+    alert("Form submitted successfully!");
+  };
   return (
     <div className="contact">
-        <h1>Contact page</h1>
+      <div className="container">
+        <div className="info-contact">
+          <h2>Контакты</h2>
+          <b>Адрес:</b>
+          <p>Республика Узбекистан, 100057, г. Ташкент, Алмазарский район, ул. Байроктол, 50</p>
+          <b>Телефон:</b>
+          <p>+99871 2280088</p>
+        </div>
+      </div>
+      <div className="wave-content">
+        <div className="container" data-aos="fade-up">
+          <h2>ЧП «Chococream»</h2>
+          <p>Производство шоколадной пасты «CHOCOCREAM» и «CHOCOTELLA», «VELONA», «RIOLLA», «SLADOK».</p>
+          <b>Адрес производства:</b>
+          <p>Республика Узбекистан, Ташкентская область, Ташкентский район, "Авлиё-Ота" МФЙ, ул. Шарк, 1-тупик, дом-3</p>
+          <b>Юридический адрес:</b>
+          <p>Республика Узбекистан, Ташкентская область, Ташкентский район, "Авлиё-Ота" МФЙ, ул. Шарк, 1-тупик, дом-3</p>
+          <b>Телефон:</b>
+          <p>+99871 2099900</p>
+        </div>
+        <div className="container" data-aos="fade-up">
+          <h2>ЧП «Chococream»</h2>
+          <p>Производство шоколадной пасты «CHOCOCREAM» и «CHOCOTELLA», «VELONA», «RIOLLA», «SLADOK».</p>
+          <b>Адрес производства:</b>
+          <p>Республика Узбекистан, Ташкентская область, Ташкентский район, "Авлиё-Ота" МФЙ, ул. Шарк, 1-тупик, дом-3</p>
+          <b>Юридический адрес:</b>
+          <p>Республика Узбекистан, Ташкентская область, Ташкентский район, "Авлиё-Ота" МФЙ, ул. Шарк, 1-тупик, дом-3</p>
+          <b>Телефон:</b>
+          <p>+99871 2099900</p>
+        </div>
+        <div className="container" data-aos="fade-up">
+          <h2>ЧП «Chococream»</h2>
+          <p>Производство шоколадной пасты «CHOCOCREAM» и «CHOCOTELLA», «VELONA», «RIOLLA», «SLADOK».</p>
+          <b>Адрес производства:</b>
+          <p>Республика Узбекистан, Ташкентская область, Ташкентский район, "Авлиё-Ота" МФЙ, ул. Шарк, 1-тупик, дом-3</p>
+          <b>Юридический адрес:</b>
+          <p>Республика Узбекистан, Ташкентская область, Ташкентский район, "Авлиё-Ота" МФЙ, ул. Шарк, 1-тупик, дом-3</p>
+          <b>Телефон:</b>
+          <p>+99871 2099900</p>
+        </div>
+        <div className="container" data-aos="fade-up">
+          <h2>ЧП «Chococream»</h2>
+          <p>Производство шоколадной пасты «CHOCOCREAM» и «CHOCOTELLA», «VELONA», «RIOLLA», «SLADOK».</p>
+          <b>Адрес производства:</b>
+          <p>Республика Узбекистан, Ташкентская область, Ташкентский район, "Авлиё-Ота" МФЙ, ул. Шарк, 1-тупик, дом-3</p>
+          <b>Юридический адрес:</b>
+          <p>Республика Узбекистан, Ташкентская область, Ташкентский район, "Авлиё-Ота" МФЙ, ул. Шарк, 1-тупик, дом-3</p>
+          <b>Телефон:</b>
+          <p>+99871 2099900</p>
+        </div>
+     </div>
+     <div className="contact-form-container">
+      <div className="container">
+      <h2>Связаться с нами</h2>
+      <form onSubmit={handleSubmit} className="form-contact">
+        <div className="contact-form">
+        <div className="form-group">
+          <label>Ваше имя</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Укажите имя"
+            value={formData.name}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label>Номер телефона</label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="+998 90 999-99-99"
+            value={formData.phone}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label>Электронная почта</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="example@mail.com"
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label>Тема сообщения</label>
+          <input
+            type="text"
+            name="subject"
+            placeholder="Укажите тему"
+            value={formData.subject}
+            onChange={handleChange}
+          />
+        </div>
+        </div>
+        <div className="form-group">
+          <label>Сообщение</label>
+          <textarea
+            name="message"
+            placeholder="Ваше сообщение"
+            value={formData.message}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-buttom">
+          <button type="submit" className="submit-button">
+            Отправить
+          </button>
+          <p>Отправляя заявку, я соглашаюсь на обработку <span>персональных данных</span></p>
+        </div>
+      </form>
+      </div>
+    </div>
     </div>
   );
 };

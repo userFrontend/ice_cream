@@ -17,13 +17,12 @@ const Header = () => {
                 </div>
 
                 <nav className={`nav-links ${menuOpen ? "hidden" : ""}`}>
-                    <NavLink to='/'>О холдинге</NavLink>
+                    <NavLink to='/about'>О холдинге</NavLink>
                     <NavLink to='/'>Продукция</NavLink>
-                    <NavLink to='/'>Контакты</NavLink>
+                    <NavLink to='/contact'>Контакты</NavLink>
                 </nav>
 
                 <div className={`contact ${menuOpen ? "hidden" : ""}`}>
-                    <span className="search-icon">🔍</span>
                     <span className="phone">71 228 00 88</span>
                 </div>
 
