@@ -24,6 +24,7 @@ const About = () => {
   };
   return (
     <>
+      {/*  */}
       <section className="second">
         <div className="container second-container">
           <div className="second-container__left">
@@ -38,27 +39,29 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Holding Haqida */}
       <section className="holding" data-aos="fade-up">
         <div className="container holding-container">
           <div className="holding-container__wrapper">
             <div className="holding-container__wrapper__item">
               <h2>Rojok</h2>
               <p>
-                «ESTELLO», «VALENCIA», «MORELIA», «KARAVAN» va boshqa shokolad
+                ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
                 konfetlarini ishlab chiqarish.
               </p>
             </div>
             <div className="holding-container__wrapper__item">
               <h2>Rojok</h2>
               <p>
-                «ESTELLO», «VALENCIA», «MORELIA», «KARAVAN» va boshqa shokolad
+                ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
                 konfetlarini ishlab chiqarish.
               </p>
             </div>
             <div className="holding-container__wrapper__item">
               <h2>Rojok</h2>
               <p>
-                «ESTELLO», «VALENCIA», «MORELIA», «KARAVAN» va boshqa shokolad
+                ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
                 konfetlarini ishlab chiqarish.
               </p>
             </div>
@@ -78,11 +81,13 @@ const About = () => {
               yetakchilardan biri hisoblanadi`}
             </p>
             <a href="/">
-            xolding tuzilmasi <Icons.rightArrow />
+              xolding tuzilmasi <Icons.rightArrow />
             </a>
           </div>
         </div>
       </section>
+
+      {/* Brendlar */}
       <section className="third">
         <div className="container third-container">
           <div className="third-container__up">
@@ -201,24 +206,40 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="messiya">
-        <div className="container messiya-container">
-          <div className="messiya-container__left">
-            <h1 data-aos="fade-down">{">20"} </h1>
-            <p data-aos="fade-up">
-              bozorda 20 yildan ortiq tajriba <br />
-            </p>
-            <a href="/" data-aos="fade-up">
-              batafsil <Icons.rightArrow />
-            </a>
+
+      {/* Messiya */}
+      <section class="container section section--bg_1 mission">
+        <div class="section-top anim active">
+          <h2 class="title title--size_s">Bizning missiya</h2>
+        </div>
+        <div class="mission-inner">
+          <div class="mission-image anim anim--image active">
+            <picture>
+            <img class="lazyload" src="https://nmedov.uz/wp-content/uploads/2023/02/106-3-1-1-768x1152.jpg" width="628" height="780" />
+            </picture>
           </div>
-          <div className="messiya-container__right" data-aos="fade-up">
-            <h3>
-              Yuqori texnologik uskunalar va 20 yillik ish tajribasi bizga
-              tansiq ta’m, Yevropa sifati va arzon narxlarni o‘zida mujassam
-              etuvchi yuqori sifatli oziq-ovqat mahsulotlarini ishlab chiqarish
-              imkoniyatini beradi.
-            </h3>
+          <div class="mission-content">
+            <ul class="mission-list anim-parent anim-parent--right">
+              <li class="mission-list__item active">
+                <span class="mission-list__count">01</span>
+                <div class="mission-list__content">
+                  Turli toifadagi sifatli va mazali oziq-ovqat mahsulotlarini
+                  taqdim etish.
+                </div>
+              </li>
+              <li class="mission-list__item active">
+                <span class="mission-list__count">02</span>
+                <div class="mission-list__content">
+                  Jahon maydonida dong taratgan brendga aylanish{" "}
+                </div>
+              </li>
+              <li class="mission-list__item active">
+                <span class="mission-list__count">03</span>
+                <div class="mission-list__content">
+                  Dunyoni yanada lazzatli qilish
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

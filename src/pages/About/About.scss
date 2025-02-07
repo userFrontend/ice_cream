@@ -35,55 +35,74 @@
 }
 
 .holding {
-  margin-bottom: 120px;
-  &-container {
-    display: flex;
-    justify-content: space-between;
-    &__wrapper {
-      width: 50%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      &__item {
-        padding: 50px;
-        background-color: purple;
-        border-radius: 80px 10px 80px 10px;
-        color: white;
-        h2 {
-          font-size: 2rem;
-          margin-bottom: 30px;
+    margin-bottom: 120px;
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      &__wrapper {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px; /* Kubiklar orasidagi bo'shliq */
+        &__item {
+          padding: 50px;
+          background: linear-gradient(135deg, #6a11cb, #2575fc); /* Nozik gradient */
+          border-radius: 30px; /* Yumshoqroq burchaklar */
+          color: white;
+          transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effekti uchun */
+          &:hover {
+            transform: translateY(-10px); /* Hoverda yuqoriga siljish */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soye qo'shish */
+          }
+          h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            font-family: 'Arial', sans-serif;
+            color: #ffcc00; /* Sarlavha rangi */
+          }
+          p {
+            font-size: 1.2rem;
+            // font-family: 'Georgia', serif;
+            color: #ffffff; /* Matn rangi */
+          }
+        }
+      }
+      &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        width: 50%;
+        padding-left: 80px;
+        h1 {
+          font-size: 3rem;
+          font-weight: 700;
+          color: black;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #6e6e6e;
+        }
+        a {
+          display: flex;
+          width: 100%;
+          font-weight: 600;
+          color: #4E428E; /* Havola rangi */
+          font-size: 1.5rem;
+          gap: 20px;
+          align-items: center;
+          text-decoration: none; /* Havola tagidagi chiziqni olib tashlash */
+          &:hover {
+            color: darken(#4E428E, 10%); /* Hoverda rangni to'qroq qilish */
+          }
         }
       }
     }
-    &__description {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 30px;
-      width: 50%;padding-left: 80px;
-      h1 {
-        font-size: 3rem;
-        font-weight: 700;
-        color: black;
-        margin-bottom: 20px;
-      }
-      p {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: #6e6e6e;
-      }
-      a{
-        display: flex;
-        width: 100%;
-        font-weight: 600;
-        color: purple;
-        font-size: 1.5rem;
-        gap: 20px;
-        align-items: center;
-      }
-    }
   }
-}
+
 
 .third {
   margin-top: 40px;
@@ -120,43 +139,131 @@
   }
 }
 
-.messiya {
-  margin-bottom: 120px;
-  &-container {
-    display: flex;
-    justify-content: space-between;
-    &__left {
-      h1 {
-        font-size: 7rem;
-        font-weight: 700;
-        color: black;
-        margin-bottom: 20px;
-      }
-      p {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: #6e6e6e;
-        margin-bottom: 20px;
-      }
-      a {
-        display: flex;
-        align-items: center;
-        font-size: 24px;
-        color: purple;
-        gap: 20px;
-
-      }
+// Asosiy stilizatsiyalar
+.section {
+    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
+  
+    &--bg_1 {
+      background-color: #f9f9f9; // Orqa fon rangi
     }
-    &__right {
-      display: flex;
-      width: 50%;
-      justify-content: center;
-      align-items: center;
-      h3 {
+  
+    .section-top {
+      text-align: center;
+      margin-bottom: 2rem;
+  
+      .title {
         font-size: 2rem;
-        font-weight: 700;
-        color: #6e6e6e;
+        font-weight: bold;
+        color: #333;
+  
+        &--size_s {
+          font-size: 1.5rem;
+        }
       }
     }
   }
-}
+  
+  .mission-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  
+    .mission-image {
+      flex: 1 1 45%;
+      max-width: 45%;
+      position: relative;
+  
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+  
+    .mission-content {
+      flex: 1 1 50%;
+      max-width: 50%;
+    }
+  }
+  
+  .mission-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+  
+      &.active {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  
+    &__count {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #007bff;
+      margin-right: 1rem;
+      min-width: 40px;
+      text-align: center;
+    }
+  
+    &__content {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.5;
+    }
+  }
+  
+  // Animatsiyalar
+  .anim {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  
+    &.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    &--image {
+      transform: translateX(-20px);
+  
+      &.active {
+        transform: translateX(0);
+      }
+    }
+  }
+  
+  .anim-parent {
+    &--right {
+      .mission-list__item {
+        opacity: 0;
+        transform: translateX(20px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+  
+        &.active {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
