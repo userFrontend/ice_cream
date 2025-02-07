@@ -24,15 +24,16 @@ const About = () => {
   };
   return (
     <>
-      {/*  */}
+      {/* First page */}
       <section className="second">
         <div className="container second-container">
           <div className="second-container__left">
             <img data-aos="fade-up" src="/images/logo.png" alt="" />
             <h2 data-aos="fade-up">
-              logoni pastiga text bering <br />
+              xalqimiz uchun sifatli va foydali mahsulotlarni oz vaqtida yetkzib
+              bersih va sifat barqarorligni taminlash va hamkorlar bilan uzoq
+              muddatli munosabatlarni ornatish. <br />
             </h2>
-            <p data-aos="fade-up">batafsil</p>
           </div>
           <div className="second-container__right" data-aos="fade-up">
             <img src="/images/choco.png" alt="" />
@@ -207,7 +208,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Messiya */}
+      {/* Bizning Messiya */}
       <section class="container section section--bg_1 mission">
         <div class="section-top anim active">
           <h2 class="title title--size_s">Bizning missiya</h2>
@@ -215,7 +216,12 @@ const About = () => {
         <div class="mission-inner">
           <div class="mission-image anim anim--image active">
             <picture>
-            <img class="lazyload" src="https://nmedov.uz/wp-content/uploads/2023/02/106-3-1-1-768x1152.jpg" width="628" height="780" />
+              <img
+                class="lazyload"
+                src="https://nmedov.uz/wp-content/uploads/2023/02/106-3-1-1-768x1152.jpg"
+                width="628"
+                height="780"
+              />
             </picture>
           </div>
           <div class="mission-content">
@@ -243,6 +249,80 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* holding tarixidan */}
+
+      {/* Stategiya */}
+      <section className="st" data-aos="fade-up">
+        <div className="container st-container">
+          <div className="st-container__description">
+            <h1>Strategiya, 2025</h1>
+            <p>
+              {`"Biz erishgan yutuqlarimizning eng katta tashkil etuvchisi to‘g‘ri qurilgan strategiya. Bugungi kunga kelib, mutaxassislarimiz tomonidan 5 yillik reja ishlab chiqilgan va u 2022 yilning oxiriga qadar amal qiladi.`}
+            </p>
+          </div>
+          <div className="st-container__wrapper">
+            <div className="st-container__wrapper__item">
+              <i class="bx bx-lg bx-trending-up"></i>{" "}
+              <p>
+                Har yili oziq-ovqat mahsulotlarini ishlab chiqarishga oid ikkita
+                yangi loyiha ishga tushiriladi
+              </p>
+            </div>
+            <div className="st-container__wrapper__item">
+              <i class="bx bx-lg bx-trending-up"></i>{" "}
+              <p>
+                MDH mamlakatlari o‘rtasida oziq-ovqat mahsulotlarining eng yirik
+                va mashhur ta’minotchisi bo‘lishga intilish.
+              </p>
+            </div>
+            <div className="st-container__wrapper__item">
+              <i class="bx bx-lg bx-trending-up"></i>{" "}
+              <p>
+                Xorijiy ekspertlar va o‘zaro manfaatli munosabatlarni
+                rivojlantirish muassasalari bilan ishlash tajribasi tufayli o‘z
+                kasbiy mahoratini doimiy tarzda oshirib borish.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Holding Hamkorlari */}
+      <section className="fourth">
+        <div className="container fourth-container">
+          <div className="fourth-container__title">
+            <h1 data-aos="fade-right">Hamkorlarimiz </h1>
+            <a href="/" data-aos="fade-left">
+              batafsil <Icons.rightArrow />
+            </a>
+          </div>
+          <div data-aos="fade-up" className="fourth-container__wrapper">
+            <a href="/">
+              <img src="/images/logo.png" alt="Slide 1" />
+              <p>www.akhmedov.uz</p>
+            </a>
+            <a href="/">
+              <img src="/images/logo.png" alt="Slide 1" />
+              <p>www.akhmedov.uz</p>
+            </a>
+            <a href="/">
+              <img src="/images/logo.png" alt="Slide 1" />
+              <p>www.akhmedov.uz</p>
+            </a>
+            <a href="/">
+              <img src="/images/logo.png" alt="Slide 1" />
+              <p>www.akhmedov.uz</p>
+            </a>
+            <a href="/">
+              <img src="/images/logo.png" alt="Slide 1" />
+              <p>www.akhmedov.uz</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Holding yangiliklari */}
     </>
   );
 };
