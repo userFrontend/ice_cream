@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "./Header.scss";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import "./Header.scss";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -19,6 +19,7 @@ const Header = () => {
                 <nav className={`nav-links ${menuOpen ? "hidden" : ""}`}>
                     <NavLink to='/about'>О холдинге</NavLink>
                     <NavLink to='/'>Продукция</NavLink>
+                    <NavLink to='/catalog'>Каталог</NavLink>
                     <NavLink to='/contact'>Контакты</NavLink>
                 </nav>
 
