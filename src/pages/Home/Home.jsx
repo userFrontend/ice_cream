@@ -31,11 +31,11 @@ const Home = () => {
               oziq-ovqat sanoati sohasida peshqadamlardan biri hisoblanadi
             </p>
             <a href="/">
-              batafsil <Icons.rightArrow />
+              Batafsil <Icons.rightArrow/>
             </a>
           </div>
           <div className="first-container__right" data-aos="fade-left">
-            <img src="/images/hero-img.png" alt="Hero" />
+            <img src="/images/hero.png" alt="Hero" />
           </div>
         </div>
       </section>
@@ -65,6 +65,7 @@ const Home = () => {
               O‘zbekistonda 15 dan ortiq yetakchi brendlar
             </h3>
           </div>
+        </div>
           <div data-aos="fade-up" className="third-container__down">
             <Slider {...settings1}>
               <div>
@@ -173,14 +174,13 @@ const Home = () => {
               </div>
             </Slider>
           </div>
-        </div>
       </section>
       <section className="fourth">
         <div className="container fourth-container">
           <div className="fourth-container__title">
             <h1 data-aos="fade-right">Hamkorlarimiz </h1>
             <a href="/" data-aos="fade-left">
-            batafsil <Icons.rightArrow />
+            Batafsil <Icons.rightArrow />
 
             </a>
           </div>

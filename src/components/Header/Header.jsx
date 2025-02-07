@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.scss";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -12,9 +12,9 @@ const Header = () => {
     return (
         <header className="header">
             <div className="container">
-                <div className="logo">
+                <Link to='/' className="logo">
                     <img src="/images/logo.png" alt="logo" />
-                </div>
+                </Link>
 
                 <nav className={`nav-links ${menuOpen ? "hidden" : ""}`}>
                     <NavLink to='/about'>О холдинге</NavLink>
@@ -23,7 +23,7 @@ const Header = () => {
                 </nav>
 
                 <div className={`contact ${menuOpen ? "hidden" : ""}`}>
-                    <span className="phone">71 228 00 88</span>
+                    <Link to='tel:501117733' className="phone">50 111 77 33</Link>
                 </div>
 
                 <button className={`menu-btn ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
@@ -37,7 +37,7 @@ const Header = () => {
                 <NavLink to='/' onClick={toggleMenu}>О холдинге</NavLink>
                 <NavLink to='/' onClick={toggleMenu}>Продукция</NavLink>
                 <NavLink to='/' onClick={toggleMenu}>Контакты</NavLink>
-                <span className="phone">71 228 00 88</span>
+                <Link to='tel:501117733' className="phone">50 111 77 33</Link>
             </div>
         </header>
     );
