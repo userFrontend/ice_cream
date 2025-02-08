@@ -3,10 +3,12 @@
   &-container {
     display: flex;
     justify-content: space-between;
+    gap:20px;
     &__left {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      gap: 20px;
       // align-items: center;
       img {
         width: 330px;
@@ -17,12 +19,6 @@
         font-weight: 700;
         color: #6e6e6e;
         margin-bottom: 20px;
-      }
-      p {
-        display: flex;
-        align-items: center;
-        height: 24px;
-        gap: 10px;
       }
     }
     &__right {
@@ -139,6 +135,77 @@
   }
 }
 
+// strategiya
+.st {
+    margin-bottom: 120px;
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      &__wrapper {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px; /* Kubiklar orasidagi bo'shliq */
+        &__item {
+          padding: 50px;
+          background: linear-gradient(135deg, #191122, #2575fc); /* Nozik gradient */
+          border-radius: 30px; /* Yumshoqroq burchaklar */
+          color: white;
+          transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effekti uchun */
+          &:hover {
+            transform: translateY(-10px); /* Hoverda yuqoriga siljish */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soye qo'shish */
+          }
+          h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            font-family: 'Arial', sans-serif;
+            color: #ffcc00; /* Sarlavha rangi */
+          }
+          p {
+            font-size: 1.2rem;
+            // font-family: 'Georgia', serif;
+            color: #ffffff; /* Matn rangi */
+          }
+        }
+      }
+      &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        width: 50%;
+        padding-left: 80px;
+        h1 {
+          font-size: 3rem;
+          font-weight: 700;
+          color: black;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #6e6e6e;
+        }
+        a {
+          display: flex;
+          width: 100%;
+          font-weight: 600;
+          color: #4E428E; /* Havola rangi */
+          font-size: 1.5rem;
+          gap: 20px;
+          align-items: center;
+          text-decoration: none; /* Havola tagidagi chiziqni olib tashlash */
+          &:hover {
+            color: darken(#4E428E, 10%); /* Hoverda rangni to'qroq qilish */
+          }
+        }
+      }
+    }
+  }
+
+
 // Asosiy stilizatsiyalar
 .section {
     padding: 2rem 0;
@@ -146,7 +213,7 @@
     overflow: hidden;
   
     &--bg_1 {
-      background-color: #f9f9f9; // Orqa fon rangi
+    //   background-color: #f9f9f9; // Orqa fon rangi
     }
   
     .section-top {
@@ -169,12 +236,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 2rem;
   
     .mission-image {
       flex: 1 1 45%;
-      max-width: 45%;
+      max-width: 22%;
       position: relative;
   
       img {
