@@ -153,21 +153,22 @@ body {
    }
 
    .media-mobile{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--pre-color);
-    width: 100%;
-    padding: 15px;
-    z-index: 3;
-    display: none;
-    i{
-        font-size: 27px;
-    }
-    a{
+       position: fixed;
+       bottom: 0;
+       left: 0;
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+       background-color: var(--pre-color);
+       width: 100%;
+       padding: 15px;
+       z-index: 3;
+       display: none;
+       i{
+           font-size: 27px;
+        }
+        a{
+        outline: none;
         display: flex;
         flex-direction: column;
         align-items: center;
