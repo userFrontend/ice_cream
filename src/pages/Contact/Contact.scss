@@ -73,3 +73,20 @@ $animation-duration: 6s;
     
       }
 }
+
+@media (max-width: 600px) {
+    .contact-form-container{
+        .contact-form{
+            display: flex !important;
+            flex-direction: column;
+            gap: 20px;
+            input,
+            textarea {
+                width: 100% !important;
+            }
+        }
+        button{
+            width: 100% !important;
+        }
+    }
+}
