@@ -25,9 +25,9 @@ const About = () => {
   return (
     <>
       {/* First page */}
-      <section className="second">
-        <div className="container second-container">
-          <div className="second-container__left">
+      <section className="about-first">
+        <div className="container about-first-container">
+          <div className="about-first-container__left">
             <img data-aos="fade-up" src="/images/logo.png" alt="" />
             <h2 data-aos="fade-up">
               xalqimiz uchun sifatli va foydali mahsulotlarni oz vaqtida yetkzib
@@ -35,7 +35,7 @@ const About = () => {
               muddatli munosabatlarni ornatish. <br />
             </h2>
           </div>
-          <div className="second-container__right" data-aos="fade-up">
+          <div className="about-first-container__right" data-aos="fade-up">
             <img src="/images/choco.png" alt="" />
           </div>
         </div>
@@ -89,15 +89,15 @@ const About = () => {
       </section>
 
       {/* Brendlar */}
-      <section className="third">
-        <div className="container third-container">
-          <div className="third-container__up">
+      <section className="about-second">
+        <div className="container about-second-container">
+          <div className="about-second-container__up">
             <h1 data-aos="fade-right">{">15"} </h1>
             <h3 data-aos="fade-left">
               O‘zbekistonda 15 dan ortiq yetakchi brendlar
             </h3>
           </div>
-          <div className="third-container__down">
+          <div className="about-second-container__down">
             <Slider {...settings1}>
               <div>
                 <img src="/images/logo.png" alt="Slide 1" />
@@ -209,39 +209,39 @@ const About = () => {
       </section>
 
       {/* Bizning Messiya */}
-      <section class="container section section--bg_1 mission">
-        <div class="section-top anim active">
-          <h2 class="title title--size_s">Bizning missiya</h2>
+      <section className="container section section--bg_1 mission">
+        <div className="section-top anim active">
+          <h2 className="title title--size_s">Bizning missiya</h2>
         </div>
-        <div class="mission-inner">
-          <div class="mission-image anim anim--image active">
+        <div className="mission-inner">
+          <div className="mission-image anim anim--image active">
             <picture>
               <img
-                class="lazyload"
+                className="lazyload"
                 src="https://nmedov.uz/wp-content/uploads/2023/02/106-3-1-1-768x1152.jpg"
                 width="628"
                 height="780"
               />
             </picture>
           </div>
-          <div class="mission-content">
-            <ul class="mission-list anim-parent anim-parent--right">
-              <li class="mission-list__item active">
-                <span class="mission-list__count">01</span>
-                <div class="mission-list__content">
+          <div className="mission-content">
+            <ul className="mission-list anim-parent anim-parent--right">
+              <li className="mission-list__item active">
+                <span className="mission-list__count">01</span>
+                <div className="mission-list__content">
                   Turli toifadagi sifatli va mazali oziq-ovqat mahsulotlarini
                   taqdim etish.
                 </div>
               </li>
-              <li class="mission-list__item active">
-                <span class="mission-list__count">02</span>
-                <div class="mission-list__content">
+              <li className="mission-list__item active">
+                <span className="mission-list__count">02</span>
+                <div className="mission-list__content">
                   Jahon maydonida dong taratgan brendga aylanish{" "}
                 </div>
               </li>
-              <li class="mission-list__item active">
-                <span class="mission-list__count">03</span>
-                <div class="mission-list__content">
+              <li className="mission-list__item active">
+                <span className="mission-list__count">03</span>
+                <div className="mission-list__content">
                   Dunyoni yanada lazzatli qilish
                 </div>
               </li>
@@ -263,21 +263,21 @@ const About = () => {
           </div>
           <div className="st-container__wrapper">
             <div className="st-container__wrapper__item">
-              <i class="bx bx-lg bx-trending-up"></i>{" "}
+              <i className="bx bx-lg bx-trending-up"></i>{" "}
               <p>
                 Har yili oziq-ovqat mahsulotlarini ishlab chiqarishga oid ikkita
                 yangi loyiha ishga tushiriladi
               </p>
             </div>
             <div className="st-container__wrapper__item">
-              <i class="bx bx-lg bx-trending-up"></i>{" "}
+              <i className="bx bx-lg bx-trending-up"></i>{" "}
               <p>
                 MDH mamlakatlari o‘rtasida oziq-ovqat mahsulotlarining eng yirik
                 va mashhur ta’minotchisi bo‘lishga intilish.
               </p>
             </div>
             <div className="st-container__wrapper__item">
-              <i class="bx bx-lg bx-trending-up"></i>{" "}
+              <i className="bx bx-lg bx-trending-up"></i>{" "}
               <p>
                 Xorijiy ekspertlar va o‘zaro manfaatli munosabatlarni
                 rivojlantirish muassasalari bilan ishlash tajribasi tufayli o‘z
