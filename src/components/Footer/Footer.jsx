@@ -1,6 +1,8 @@
 import "./Footer.scss";
+import { useInfoContext } from "../../context/infoContext";
 import { RiInstagramFill, RiTelegramFill } from "react-icons/ri";
 const Footer = () => {
+  const { update, setUpdate } = useInfoContext();
   return (
     <footer>
       <div className="footer__container">
@@ -47,9 +49,7 @@ const Footer = () => {
         <div className="footer__right">
           <section className="footer-feedback">
             <h2 className="title">Свяжитесь с нами</h2>
-            <p>
-              Заполните форму, и наш менеджер свяжется с вами.
-            </p>
+            <p>Заполните форму, и наш менеджер свяжется с вами.</p>
             <div className="footer-feedback__row">
               <a href="contact">
                 Связаться с нами
@@ -86,9 +86,12 @@ const Footer = () => {
               </ul>
             </div>
 
-            <a className="footer-scrolling" href="#home">
-              <i class="bx bx-lg bx-up-arrow-alt bx-fade-up"></i>
-            </a>
+            <div
+              className="footer-scrolling"
+              onClick={() => setUpdate(!update)}
+            >
+              <i className="bx bx-lg bx-up-arrow-alt bx-fade-up"></i>
+            </div>
           </div>
         </div>
       </div>
