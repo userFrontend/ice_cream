@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import 'boxicons'
+import { InfoProvider } from './context/infoContext.jsx';
 
 AOS.init({
   duration: 1500
@@ -14,6 +15,8 @@ AOS.init({
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <App />
+    <InfoProvider>
+      <App />
+    </InfoProvider>
   </BrowserRouter>,
 )

@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Header.scss";
+import { useInfoContext } from "../../context/infoContext";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const {scroll} = useInfoContext()
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
     return (
-        <header className="header">
+        <header className="header" ref={scroll}>
             <div className="container">
                 <Link to='/' className="logo">
                     <img src="/images/logo.png" alt="logo" />
