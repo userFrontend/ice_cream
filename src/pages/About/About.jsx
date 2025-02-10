@@ -296,7 +296,7 @@ const About = () => {
               batafsil <Icons.rightArrow />
             </a>
           </div>
-          <div data-aos="container-up" className="fourth-container__wrapper">
+          <div data-aos="fade-up" className="fourth-container__wrapper">
             <a href="/">
               <img src="/images/logo.png" alt="Slide 1" />
               <p>www.akhmedov.uz</p>

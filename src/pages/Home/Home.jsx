@@ -10,6 +10,26 @@ const Home = () => {
     speed: 1000,
     autoplaySpeed: 1000,
     cssEase: "linear", // Линейная анимация
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 6,
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 530,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+    ]
   };
   const settings2 = {
     rtl: true,
@@ -19,6 +39,28 @@ const Home = () => {
     speed: 1000,
     autoplaySpeed: 1000,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 6,
+
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 530,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      
+    ]
   };
   return (
     <>
@@ -70,7 +112,7 @@ const Home = () => {
           <Slider {...settings1}>
             {/* Слайды */}
             {Array.from({ length: 16 }).map((_, index) => (
-              <div key={index}>
+              <div className="img-box" key={index}>
                 <img src="/images/logo.png" alt={`Слайд ${index + 1}`} />
               </div>
             ))}
@@ -78,7 +120,7 @@ const Home = () => {
           <Slider {...settings2}>
             {/* Слайды */}
             {Array.from({ length: 16 }).map((_, index) => (
-              <div key={index}>
+              <div className="img-box" key={index}>
                 <img src="/images/logo.png" alt={`Слайд ${index + 1}`} />
               </div>
             ))}

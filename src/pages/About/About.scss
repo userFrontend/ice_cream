@@ -475,6 +475,7 @@
       img{
         width: 100% !important;
         padding: 20px;
+        display: none;
       }
     }
   }
@@ -506,10 +507,6 @@
         }
       }
     }
-  }
-  
-  
-  @media (max-width: 450px){
     .holding{
       &-box{
         gap: 50px;
@@ -528,7 +525,7 @@
           }
         }
         &__description{
-          padding: 0;
+          padding: 0 !important;
           h1{
             font-size: 30px;
           }
@@ -542,6 +539,5 @@
       }
   
     }
-    
-
   }
+  
