@@ -23,12 +23,11 @@ const About = () => {
     cssEase: "linear",
   };
   return (
-    <>
+    <div className="container">
       {/* First page */}
-      <section className="about">
-        <div className="container about-container">
-          <div className="about-container__left">
-            <img data-aos="fade-up" src="/images/logo.png" alt="" />
+      <section className="second">
+        <div className="second-box">
+          <div className="second-box__left">
             <h2 data-aos="fade-up">
               «Ахмедов» — это больше, чем просто десерты. Мы создаем мороженое и
               глазированные сырки с любовью к традициям и вниманием к деталям.
@@ -37,7 +36,7 @@ const About = () => {
               <br />
             </h2>
           </div>
-          <div className="about-container__right" data-aos="fade-up">
+          <div className="second-box__right" data-aos="fade-up">
             <img src="/images/choco.png" alt="" />
           </div>
         </div>
@@ -45,39 +44,39 @@ const About = () => {
 
       {/* Holding Haqida */}
       <section className="holding" data-aos="fade-up">
-        <div className="container holding-container">
-          <div className="holding-container__wrapper">
-            <div className="holding-container__wrapper__item">
-              <h2>Ахмедов</h2>
+        <div className="box holding-box">
+          <div className="holding-box__wrapper">
+            <div className="holding-box__wrapper__item">
+              <h2>Rojok</h2>
               <p>
                 ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
                 konfetlarini ishlab chiqarish.
               </p>
             </div>
-            <div className="holding-container__wrapper__item">
-              <h2> Сытый Дом </h2>
+            <div className="holding-box__wrapper__item">
+              <h2>Rojok</h2>
               <p>
                 ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
                 konfetlarini ishlab chiqarish.
               </p>
             </div>
-            <div className="holding-container__wrapper__item">
-              <h2>Бомбей</h2>
+            <div className="holding-box__wrapper__item">
+              <h2>Rojok</h2>
               <p>
                 ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
                 konfetlarini ishlab chiqarish.
               </p>
             </div>
-            <div className="holding-container__wrapper__item">
-              <h2>Семейное</h2>
+            <div className="holding-box__wrapper__item">
+              <h2>Rojok</h2>
               <p>
                 «ESTELLO», «VALENCIA», «MORELIA», «KARAVAN» va boshqa shokolad
                 konfetlarini ishlab chiqarish.
               </p>
             </div>
           </div>
-          <div className="holding-container__description">
-            <h1>О холдинге</h1>
+          <div className="holding-box__description">
+            <h1>Xolding haqida</h1>
             <p>
               {`"Группа компаний «АХМЕДОВ» является одним из лидеров в своей сфере на территории Узбекистана.`}
             </p>
@@ -90,14 +89,14 @@ const About = () => {
 
       {/* Brendlar */}
       <section className="third">
-        <div className="container third-container">
-          <div className="third-container__up">
-            {/* <h1 data-aos="fade-right">{">15"} </h1>
+        <div className="box third-box">
+          <div className="third-box__up">
+            <h1 data-aos="fade-right">{">15"} </h1>
             <h3 data-aos="fade-left">
               O‘zbekistonda 15 dan ortiq yetakchi brendlar
-            </h3> */}
+            </h3> 
           </div>
-          <div className="third-container__down">
+          <div className="third-box__down">
             <Slider {...settings1}>
               <div>
                 <img src="/images/logo.png" alt="Slide 1" />
@@ -209,7 +208,7 @@ const About = () => {
       </section>
 
       {/* Bizning Messiya */}
-      <section className="container section section--bg_1 mission">
+      <section className="box section section--bg_1 mission">
         <div className="section-top anim active">
           <h2 className="title title--size_s">Bizning missiya</h2>
         </div>
@@ -254,29 +253,29 @@ const About = () => {
 
       {/* Stategiya */}
       <section className="st" data-aos="fade-up">
-        <div className="container st-container">
-          <div className="st-container__description">
+        <div className="box st-box">
+          <div className="st-box__description">
             <h1>Strategiya, 2025</h1>
             <p>
               {`"Biz erishgan yutuqlarimizning eng katta tashkil etuvchisi to‘g‘ri qurilgan strategiya. Bugungi kunga kelib, mutaxassislarimiz tomonidan 5 yillik reja ishlab chiqilgan va u 2022 yilning oxiriga qadar amal qiladi.`}
             </p>
           </div>
-          <div className="st-container__wrapper">
-            <div className="st-container__wrapper__item">
+          <div className="st-box__wrapper">
+            <div className="st-box__wrapper__item">
               <i className="bx bx-lg bx-trending-up"></i>{" "}
               <p>
                 Har yili oziq-ovqat mahsulotlarini ishlab chiqarishga oid ikkita
                 yangi loyiha ishga tushiriladi
               </p>
             </div>
-            <div className="st-container__wrapper__item">
+            <div className="st-box__wrapper__item">
               <i className="bx bx-lg bx-trending-up"></i>{" "}
               <p>
                 MDH mamlakatlari o‘rtasida oziq-ovqat mahsulotlarining eng yirik
                 va mashhur ta’minotchisi bo‘lishga intilish.
               </p>
             </div>
-            <div className="st-container__wrapper__item">
+            <div className="st-box__wrapper__item">
               <i className="bx bx-lg bx-trending-up"></i>{" "}
               <p>
                 Xorijiy ekspertlar va o‘zaro manfaatli munosabatlarni
@@ -323,7 +322,7 @@ const About = () => {
       </section>
 
       {/* Holding yangiliklari */}
-    </>
+    </div>
   );
 };
 
