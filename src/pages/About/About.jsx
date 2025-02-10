@@ -25,17 +25,19 @@ const About = () => {
   return (
     <>
       {/* First page */}
-      <section className="about-first">
-        <div className="container about-first-container">
-          <div className="about-first-container__left">
+      <section className="about">
+        <div className="container about-container">
+          <div className="about-container__left">
             <img data-aos="fade-up" src="/images/logo.png" alt="" />
             <h2 data-aos="fade-up">
-              xalqimiz uchun sifatli va foydali mahsulotlarni oz vaqtida yetkzib
-              bersih va sifat barqarorligni taminlash va hamkorlar bilan uzoq
-              muddatli munosabatlarni ornatish. <br />
+              «Ахмедов» — это больше, чем просто десерты. Мы создаем мороженое и
+              глазированные сырки с любовью к традициям и вниманием к деталям.
+              Только качественные ингредиенты, современные технологии и
+              неповторимый вкус, который запоминается с первой ложки.
+              <br />
             </h2>
           </div>
-          <div className="about-first-container__right" data-aos="fade-up">
+          <div className="about-container__right" data-aos="fade-up">
             <img src="/images/choco.png" alt="" />
           </div>
         </div>
@@ -46,28 +48,28 @@ const About = () => {
         <div className="container holding-container">
           <div className="holding-container__wrapper">
             <div className="holding-container__wrapper__item">
-              <h2>Rojok</h2>
+              <h2>Ахмедов</h2>
               <p>
                 ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
                 konfetlarini ishlab chiqarish.
               </p>
             </div>
             <div className="holding-container__wrapper__item">
-              <h2>Rojok</h2>
+              <h2> Сытый Дом </h2>
               <p>
                 ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
                 konfetlarini ishlab chiqarish.
               </p>
             </div>
             <div className="holding-container__wrapper__item">
-              <h2>Rojok</h2>
+              <h2>Бомбей</h2>
               <p>
                 ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
                 konfetlarini ishlab chiqarish.
               </p>
             </div>
             <div className="holding-container__wrapper__item">
-              <h2>Rojok</h2>
+              <h2>Семейное</h2>
               <p>
                 «ESTELLO», «VALENCIA», «MORELIA», «KARAVAN» va boshqa shokolad
                 konfetlarini ishlab chiqarish.
@@ -75,29 +77,27 @@ const About = () => {
             </div>
           </div>
           <div className="holding-container__description">
-            <h1>Xolding haqida</h1>
+            <h1>О холдинге</h1>
             <p>
-              {`"AKHMEDOV" nomidagi yirik xolding kompaniyasi kompaniyalar
-              guruhidan iborat va u O‘zbekiston oziq-ovqat sanoatida
-              yetakchilardan biri hisoblanadi`}
+              {`"Группа компаний «АХМЕДОВ» является одним из лидеров в своей сфере на территории Узбекистана.`}
             </p>
-            <a href="/">
+            {/* <a href="/">
               xolding tuzilmasi <Icons.rightArrow />
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
 
       {/* Brendlar */}
-      <section className="about-second">
-        <div className="container about-second-container">
-          <div className="about-second-container__up">
-            <h1 data-aos="fade-right">{">15"} </h1>
+      <section className="third">
+        <div className="container third-container">
+          <div className="third-container__up">
+            {/* <h1 data-aos="fade-right">{">15"} </h1>
             <h3 data-aos="fade-left">
               O‘zbekistonda 15 dan ortiq yetakchi brendlar
-            </h3>
+            </h3> */}
           </div>
-          <div className="about-second-container__down">
+          <div className="third-container__down">
             <Slider {...settings1}>
               <div>
                 <img src="/images/logo.png" alt="Slide 1" />
