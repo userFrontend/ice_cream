@@ -53,7 +53,7 @@ const Footer = () => {
             <div className="footer-feedback__row">
               <a href="contact">
                 Связаться с нами
-                <i class="bx bx-right-arrow-alt"></i>
+                <i className="bx bx-right-arrow-alt"></i>
               </a>
             </div>
           </section>

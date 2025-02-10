@@ -23,19 +23,18 @@ const About = () => {
     cssEase: "linear",
   };
   return (
-    <>
+    <div className="container">
       {/* First page */}
       <section className="second">
-        <div className="container second-container">
-          <div className="second-container__left">
-            <img data-aos="fade-up" src="/images/logo.png" alt="" />
+        <div className="second-box">
+          <div className="second-box__left">
             <h2 data-aos="fade-up">
               xalqimiz uchun sifatli va foydali mahsulotlarni oz vaqtida yetkzib
               bersih va sifat barqarorligni taminlash va hamkorlar bilan uzoq
               muddatli munosabatlarni ornatish. <br />
             </h2>
           </div>
-          <div className="second-container__right" data-aos="fade-up">
+          <div className="second-box__right" data-aos="fade-up">
             <img src="/images/choco.png" alt="" />
           </div>
         </div>
@@ -43,30 +42,30 @@ const About = () => {
 
       {/* Holding Haqida */}
       <section className="holding" data-aos="fade-up">
-        <div className="container holding-container">
-          <div className="holding-container__wrapper">
-            <div className="holding-container__wrapper__item">
+        <div className="box holding-box">
+          <div className="holding-box__wrapper">
+            <div className="holding-box__wrapper__item">
               <h2>Rojok</h2>
               <p>
                 ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
                 konfetlarini ishlab chiqarish.
               </p>
             </div>
-            <div className="holding-container__wrapper__item">
+            <div className="holding-box__wrapper__item">
               <h2>Rojok</h2>
               <p>
                 ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
                 konfetlarini ishlab chiqarish.
               </p>
             </div>
-            <div className="holding-container__wrapper__item">
+            <div className="holding-box__wrapper__item">
               <h2>Rojok</h2>
               <p>
                 ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
                 konfetlarini ishlab chiqarish.
               </p>
             </div>
-            <div className="holding-container__wrapper__item">
+            <div className="holding-box__wrapper__item">
               <h2>Rojok</h2>
               <p>
                 «ESTELLO», «VALENCIA», «MORELIA», «KARAVAN» va boshqa shokolad
@@ -74,7 +73,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="holding-container__description">
+          <div className="holding-box__description">
             <h1>Xolding haqida</h1>
             <p>
               {`"AKHMEDOV" nomidagi yirik xolding kompaniyasi kompaniyalar
@@ -90,14 +89,14 @@ const About = () => {
 
       {/* Brendlar */}
       <section className="third">
-        <div className="container third-container">
-          <div className="third-container__up">
+        <div className="box third-box">
+          <div className="third-box__up">
             <h1 data-aos="fade-right">{">15"} </h1>
             <h3 data-aos="fade-left">
               O‘zbekistonda 15 dan ortiq yetakchi brendlar
             </h3>
           </div>
-          <div className="third-container__down">
+          <div className="third-box__down">
             <Slider {...settings1}>
               <div>
                 <img src="/images/logo.png" alt="Slide 1" />
@@ -209,39 +208,39 @@ const About = () => {
       </section>
 
       {/* Bizning Messiya */}
-      <section class="container section section--bg_1 mission">
-        <div class="section-top anim active">
-          <h2 class="title title--size_s">Bizning missiya</h2>
+      <section className="box section section--bg_1 mission">
+        <div className="section-top anim active">
+          <h2 className="title title--size_s">Bizning missiya</h2>
         </div>
-        <div class="mission-inner">
-          <div class="mission-image anim anim--image active">
+        <div className="mission-inner">
+          <div className="mission-image anim anim--image active">
             <picture>
               <img
-                class="lazyload"
+                className="lazyload"
                 src="https://nmedov.uz/wp-content/uploads/2023/02/106-3-1-1-768x1152.jpg"
                 width="628"
                 height="780"
               />
             </picture>
           </div>
-          <div class="mission-content">
-            <ul class="mission-list anim-parent anim-parent--right">
-              <li class="mission-list__item active">
-                <span class="mission-list__count">01</span>
-                <div class="mission-list__content">
+          <div className="mission-content">
+            <ul className="mission-list anim-parent anim-parent--right">
+              <li className="mission-list__item active">
+                <span className="mission-list__count">01</span>
+                <div className="mission-list__content">
                   Turli toifadagi sifatli va mazali oziq-ovqat mahsulotlarini
                   taqdim etish.
                 </div>
               </li>
-              <li class="mission-list__item active">
-                <span class="mission-list__count">02</span>
-                <div class="mission-list__content">
+              <li className="mission-list__item active">
+                <span className="mission-list__count">02</span>
+                <div className="mission-list__content">
                   Jahon maydonida dong taratgan brendga aylanish{" "}
                 </div>
               </li>
-              <li class="mission-list__item active">
-                <span class="mission-list__count">03</span>
-                <div class="mission-list__content">
+              <li className="mission-list__item active">
+                <span className="mission-list__count">03</span>
+                <div className="mission-list__content">
                   Dunyoni yanada lazzatli qilish
                 </div>
               </li>
@@ -254,30 +253,30 @@ const About = () => {
 
       {/* Stategiya */}
       <section className="st" data-aos="fade-up">
-        <div className="container st-container">
-          <div className="st-container__description">
+        <div className="box st-box">
+          <div className="st-box__description">
             <h1>Strategiya, 2025</h1>
             <p>
               {`"Biz erishgan yutuqlarimizning eng katta tashkil etuvchisi to‘g‘ri qurilgan strategiya. Bugungi kunga kelib, mutaxassislarimiz tomonidan 5 yillik reja ishlab chiqilgan va u 2022 yilning oxiriga qadar amal qiladi.`}
             </p>
           </div>
-          <div className="st-container__wrapper">
-            <div className="st-container__wrapper__item">
-              <i class="bx bx-lg bx-trending-up"></i>{" "}
+          <div className="st-box__wrapper">
+            <div className="st-box__wrapper__item">
+              <i className="bx bx-lg bx-trending-up"></i>{" "}
               <p>
                 Har yili oziq-ovqat mahsulotlarini ishlab chiqarishga oid ikkita
                 yangi loyiha ishga tushiriladi
               </p>
             </div>
-            <div className="st-container__wrapper__item">
-              <i class="bx bx-lg bx-trending-up"></i>{" "}
+            <div className="st-box__wrapper__item">
+              <i className="bx bx-lg bx-trending-up"></i>{" "}
               <p>
                 MDH mamlakatlari o‘rtasida oziq-ovqat mahsulotlarining eng yirik
                 va mashhur ta’minotchisi bo‘lishga intilish.
               </p>
             </div>
-            <div className="st-container__wrapper__item">
-              <i class="bx bx-lg bx-trending-up"></i>{" "}
+            <div className="st-box__wrapper__item">
+              <i className="bx bx-lg bx-trending-up"></i>{" "}
               <p>
                 Xorijiy ekspertlar va o‘zaro manfaatli munosabatlarni
                 rivojlantirish muassasalari bilan ishlash tajribasi tufayli o‘z
@@ -297,7 +296,7 @@ const About = () => {
               batafsil <Icons.rightArrow />
             </a>
           </div>
-          <div data-aos="fade-up" className="fourth-container__wrapper">
+          <div data-aos="container-up" className="fourth-container__wrapper">
             <a href="/">
               <img src="/images/logo.png" alt="Slide 1" />
               <p>www.akhmedov.uz</p>
@@ -323,7 +322,7 @@ const About = () => {
       </section>
 
       {/* Holding yangiliklari */}
-    </>
+    </div>
   );
 };
 
