@@ -80,6 +80,9 @@
         width: 100%;
         object-fit: contain;
       }
+      p{
+        margin-top: -100px;
+      }
     }
     span{
       font-size: clamp(25px, 4vw, 70px);

@@ -17,7 +17,7 @@ const Catalog = () => {
           </h1>
           <div data-aos="fade-up" className="catalog-container__wrapper">
             <h1 className="catalog-container__wrapper__title">Мороженое</h1>
-            <div data-aos="fade-up" className="catalog-container__wrapper__box">
+            <div data-aos="fade-up" className="catalog-container__wrapper__box maxs">
               <h2 className="catalog-container__wrapper__box__subtitle">
                 Кризи Макс
               </h2>
@@ -28,55 +28,25 @@ const Catalog = () => {
                 <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
+                  <img src="images/Kreasy.png" alt="iceCream" />
                   <p>Кризи Макс Berry</p>
                 </Link>
                 <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
+                  <img src="images/Kreasy1.png" alt="iceCream" />
                   <p>Кризи Макс Berry</p>
                 </Link>
                 <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
+                  <img src="images/Kreasy2.png" alt="iceCream" />
                   <p>Кризи Макс Berry</p>
                 </Link>
                 <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
-                  <p>Кризи Макс Berry</p>
-                </Link>
-                <Link
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
-                  <p>Кризи Макс Berry</p>
-                </Link>
-                <Link
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
-                  <p>Кризи Макс Berry</p>
-                </Link>
-                <Link
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
-                  <p>Кризи Макс Berry</p>
-                </Link>
-                <Link
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
-                  <p>Кризи Макс Berry</p>
-                </Link>
-                <Link
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
+                  <img src="images/Kreasy3.png" alt="iceCream" />
                   <p>Кризи Макс Berry</p>
                 </Link>
               </div>
@@ -143,7 +113,7 @@ const Catalog = () => {
               <h3 className="catalog-container__wrapper__box__subtitle">
                 Sirok Batoncha
               </h3>
-              <div className="catalog-container__wrapper__box__row">
+              <div className="catalog-container__wrapper__box__row maxs">
                 <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
