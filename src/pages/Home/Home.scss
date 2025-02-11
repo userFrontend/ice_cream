@@ -184,7 +184,7 @@
   .first {
     &-container {
       gap: 80px;
-      flex-wrap: wrap;
+      flex-direction: column-reverse;
       &__left {
         width: 100%;
         h1 {

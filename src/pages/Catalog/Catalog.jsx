@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Catalog.scss";
 
 const Catalog = () => {
@@ -5,77 +6,38 @@ const Catalog = () => {
     <>
       <sectiion className="catalog">
         <div className="container catalog-container">
-          <h1 data-aos="fade-left" className="catalog-container__title">{`Mahsulotlar ro'yhati`} <a href="/">yuklash<i className='bx bx-down-arrow-alt'></i></a></h1>
+          <span data-aos="fade-left" className="catalog-container__title">{`Mahsulotlar ro'yhati`} <Link href="/">yuklash<i className='bx bx-down-arrow-alt'></i></Link></span>
           <div data-aos="fade-up" className="catalog-container__wrapper">
             <h1 className="catalog-container__wrapper__title">Muzqaymoqlar</h1>
-            <div data-aos="fade-up" className="catalog-container__wrapper__box">
+            <div data-aos="fade-up" className="catalog-container__wrapper__box maxs">
               <h2 className="catalog-container__wrapper__box__subtitle">
                 Kreasy Max
               </h2>
               <div data-aos="fade-up" className="catalog-container__wrapper__box__row">
-                <a
-                  href="/catalog"
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
+                  <img src="images/Kreasy.png" alt="iceCream" />
                   <p>Kreasy Max Berry</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
+                  <img src="images/Kreasy1.png" alt="iceCream" />
                   <p>Kreasy Max Berry</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
+                  <img src="images/Kreasy2.png" alt="iceCream" />
                   <p>Kreasy Max Berry</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
+                  <img src="images/Kreasy3.png" alt="iceCream" />
                   <p>Kreasy Max Berry</p>
-                </a>
-                <a
-                  href="/catalog"
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
-                  <p>Kreasy Max Berry</p>
-                </a>
-                <a
-                  href="/catalog"
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
-                  <p>Kreasy Max Berry</p>
-                </a>
-                <a
-                  href="/catalog"
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
-                  <p>Kreasy Max Berry</p>
-                </a>
-                <a
-                  href="/catalog"
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
-                  <p>Kreasy Max Berry</p>
-                </a>
-                <a
-                  href="/catalog"
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/kreasymaxberry.png" alt="iceCream" />
-                  <p>Kreasy Max Berry</p>
-                </a>
+                </Link>
               </div>
             </div>
             <div data-aos="fade-up" className="catalog-container__wrapper__box">
@@ -83,121 +45,100 @@ const Catalog = () => {
                 Rojok
               </h2>
               <div className="catalog-container__wrapper__box__row">
-                <a
-                  href="/catalog"
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/rojok1.png" alt="iceCream" />
+                  <img src="images/1.png" alt="iceCream" />
                   <p>Rojok Caramel</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/rojok2.png" alt="iceCream" />
+                  <img src="images/2.png" alt="iceCream" />
                   <p>Rojok Cherry</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/rojok1.png" alt="iceCream" />
+                  <img src="images/3.png" alt="iceCream" />
                   <p>Rojok Caramel</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/rojok2.png" alt="iceCream" />
+                  <img src="images/4.png" alt="iceCream" />
                   <p>Rojok Cherry</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/rojok1.png" alt="iceCream" />
+                  <img src="images/5.png" alt="iceCream" />
                   <p>Rojok Caramel</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/rojok2.png" alt="iceCream" />
-                  <p>Rojok Cherry</p>
-                </a>
-                <a
-                  href="/catalog"
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/rojok1.png" alt="iceCream" />
+                  <img src="images/pic5.png" alt="iceCream" />
                   <p>Rojok Caramel</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/rojok2.png" alt="iceCream" />
+                  <img src="images/pic6.png" alt="iceCream" />
                   <p>Rojok Cherry</p>
-                </a>
+                </Link>
+                <Link
+                  className="catalog-container__wrapper__box__row__item"
+                >
+                  <img src="images/pic7.png" alt="iceCream" />
+                  <p>Rojok Cherry</p>
+                </Link>
               </div>
             </div>
           </div>
           <div data-aos="fade-up" className="catalog-container__wrapper">
-            <h1 className="catalog-container__wrapper__title">Siroklar</h1>
+            <h2 className="catalog-container__wrapper__title">Siroklar</h2>
             <div data-aos="fade-up" className="catalog-container__wrapper__box">
-              <h2 className="catalog-container__wrapper__box__subtitle">
+              <h3 className="catalog-container__wrapper__box__subtitle">
                 Sirok Batoncha
-              </h2>
+              </h3>
               <div className="catalog-container__wrapper__box__row">
-                <a
-                  href="/catalog"
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/sirokbaton.png" alt="iceCream" />
+                  <img src="images/Сыробушки.png" alt="iceCream" />
                   <p>Sirok Caramel</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/sirokbaton.png" alt="iceCream" />
+                  <img src="images/Сыробушки1.png" alt="iceCream" />
                   <p>Sirok Caramel</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/sirokbaton.png" alt="iceCream" />
+                  <img src="images/Сыробушки2.png" alt="iceCream" />
                   <p>Sirok Caramel</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/sirokbaton.png" alt="iceCream" />
+                  <img src="images/Сыробушки3.png" alt="iceCream" />
                   <p>Sirok Caramel</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/sirokbaton.png" alt="iceCream" />
+                  <img src="images/Сыробушки4.png" alt="iceCream" />
                   <p>Sirok Caramel</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/sirokbaton.png" alt="iceCream" />
+                  <img src="images/Сыробушки5.png" alt="iceCream" />
                   <p>Sirok Caramel</p>
-                </a>
-                <a
-                  href="/catalog"
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/sirokbaton.png" alt="iceCream" />
-                  <p>Sirok Caramel</p>
-                </a>
+                </Link>
               </div>
             </div>
             <div data-aos="fade-up" className="catalog-container__wrapper__box">
@@ -205,55 +146,24 @@ const Catalog = () => {
                 Sirok Mockup
               </h2>
               <div data-aos="fade-up" className="catalog-container__wrapper__box__row">
-                <a
-                  href="/catalog"
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/sirokmockup.png" alt="iceCream" />
+                  <img src="images/SirokM.png" alt="iceCream" />
                   <p>Sirok Plombir</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/sirokmockup.png" alt="iceCream" />
+                  <img src="images/SirokM1.png" alt="iceCream" />
                   <p>Sirok Plombir</p>
-                </a>
-                <a
-                  href="/catalog"
+                </Link>
+                <Link
                   className="catalog-container__wrapper__box__row__item"
                 >
-                  <img src="images/sirokmockup.png" alt="iceCream" />
+                  <img src="images/SirokM2.png" alt="iceCream" />
                   <p>Sirok Plombir</p>
-                </a>
-                <a
-                  href="/catalog"
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/sirokmockup.png" alt="iceCream" />
-                  <p>Sirok Plombir</p>
-                </a>
-                <a
-                  href="/catalog"
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/sirokmockup.png" alt="iceCream" />
-                  <p>Sirok Plombir</p>
-                </a>
-                <a
-                  href="/catalog"
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/sirokmockup.png" alt="iceCream" />
-                  <p>Sirok Plombir</p>
-                </a>
-                <a
-                  href="/catalog"
-                  className="catalog-container__wrapper__box__row__item"
-                >
-                  <img src="images/sirokmockup.png" alt="iceCream" />
-                  <p>Sirok Plombir</p>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
