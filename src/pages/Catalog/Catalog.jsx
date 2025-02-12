@@ -8,12 +8,12 @@ const Catalog = () => {
         <div className="container catalog-container">
           <h1 data-aos="fade-left" className="catalog-container__title">
             {`Список продуктов`}{" "}
-            <Link
+            <a
               href="/images/ahmedov_katalog.pdf"
               download="ahmedov_katalog.pdf"
             >
               Yuklash <i className="bx bx-down-arrow-alt"></i>
-            </Link>
+            </a>
           </h1>
           <div data-aos="fade-up" className="catalog-container__wrapper">
             <h1 className="catalog-container__wrapper__title">Мороженое</h1>
