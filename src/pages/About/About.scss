@@ -449,31 +449,6 @@
       }
 
     }
-    .fourth{
-      h1{
-        font-size: clamp(25px, 3vw, 60px);
-      }
-      a{
-        font-size: clamp(12px, 3vw, 40px);
-      }
-      &__container{
-        &__wrapper{
-          a{
-            width: 100%;
-            p{
-              height: 50px;
-              overflow: hidden;
-              margin: 0 !important;
-            }
-          }
-        }
-      }
-      img{
-        width: 100% !important;
-        padding: 20px;
-        display: none;
-      }
-    }
   }
   
   @media (max-width: 768px){

@@ -298,24 +298,19 @@ const About = () => {
           </div>
           <div data-aos="fade-up" className="fourth-container__wrapper">
             <a href="/">
-              <img src="/images/logo.png" alt="Slide 1" />
-              <p>www.akhmedov.uz</p>
+              <img src="/images/part.png" alt="Slide 1" />
             </a>
             <a href="/">
-              <img src="/images/logo.png" alt="Slide 1" />
-              <p>www.akhmedov.uz</p>
+              <img src="/images/part1.png" alt="Slide 1" />
             </a>
             <a href="/">
-              <img src="/images/logo.png" alt="Slide 1" />
-              <p>www.akhmedov.uz</p>
+              <img src="/images/part2.png" alt="Slide 1" />
             </a>
             <a href="/">
-              <img src="/images/logo.png" alt="Slide 1" />
-              <p>www.akhmedov.uz</p>
+              <img src="/images/part3.png" alt="Slide 1" />
             </a>
             <a href="/">
-              <img src="/images/logo.png" alt="Slide 1" />
-              <p>www.akhmedov.uz</p>
+              <img src="/images/part.jpg" alt="Slide 1" />
             </a>
           </div>
         </div>
