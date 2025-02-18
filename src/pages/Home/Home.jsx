@@ -15,21 +15,21 @@ const Home = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 6,
-        }
+        },
       },
       {
         breakpoint: 800,
         settings: {
           slidesToShow: 4,
-        }
+        },
       },
       {
         breakpoint: 530,
         settings: {
           slidesToShow: 2,
-        }
+        },
       },
-    ]
+    ],
   };
   const settings2 = {
     rtl: true,
@@ -44,30 +44,28 @@ const Home = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 6,
-
-        }
+        },
       },
       {
         breakpoint: 800,
         settings: {
           slidesToShow: 4,
-        }
+        },
       },
       {
         breakpoint: 530,
         settings: {
           slidesToShow: 2,
-        }
+        },
       },
-      
-    ]
+    ],
   };
   return (
     <>
       <section className="first">
         <div className="container first-container">
           <div className="first-container__left" data-aos="fade-right">
-            <h1>Удивительная идея – удивительный мир</h1>
+            <h1>Мороженое с семейной историей</h1>
             <p>
               Группа компаний под единым брендом «AKHMEDOV» является одним из
               лидеров в пищевой промышленности Узбекистана.
@@ -77,10 +75,11 @@ const Home = () => {
             </a>
           </div>
           <div className="first-container__right" data-aos="fade-left">
-            <img src="/images/hero.png" alt="Герой" />
+            <img src="/images/choco.png" alt="Герой" />
           </div>
         </div>
       </section>
+
       <section className="second">
         <div className="container second-container">
           <div className="second-container__left">
@@ -91,21 +90,20 @@ const Home = () => {
           </div>
           <div className="second-container__right" data-aos="fade-up">
             <h3>
-              Высокотехнологичное оборудование и 20-летний опыт работы
-              позволяют нам производить высококачественные продукты питания,
-              сочетающие изысканный вкус, европейское качество и доступные
-              цены.
+              Компания «Ахмедов» радует жителей Узбекистана качественным
+              мороженым и глазированными сырками с 2002 года. Тщательно
+              отобранное качественное сырье и эксклюзивный ассортимент для
+              истинных гурманов.
             </h3>
           </div>
         </div>
       </section>
+
       <section className="third">
         <div className="container third-container">
           <div className="third-container__up">
-            <h1 data-aos="fade-right">{">15"} </h1>
-            <h3 data-aos="fade-left">
-              Более 15 ведущих брендов в Узбекистане
-            </h3>
+            <h1 data-aos="fade-right">{""} </h1>
+            <h3 data-aos="fade-left"></h3>
           </div>
         </div>
         <div data-aos="fade-up" className="third-container__down">
@@ -127,21 +125,28 @@ const Home = () => {
           </Slider>
         </div>
       </section>
+      
       <section className="fourth">
         <div className="container fourth-container">
           <div className="fourth-container__title">
-            <h1 data-aos="fade-right">Наши партнеры</h1>
-            <a href="/" data-aos="fade-left">
-              Подробнее <Icons.rightArrow />
-            </a>
+            <h1 data-aos="fade-right">Наши партнеры </h1>
           </div>
           <div data-aos="fade-up" className="fourth-container__wrapper">
-            {Array.from({ length: 5 }).map((_, index) => (
-              <a href="/" key={index}>
-                <img src="/images/logo.png" alt={`Партнер ${index + 1}`} />
-                <p>www.akhmedov.uz</p>
-              </a>
-            ))}
+            <a>
+              <img src="/images/part.png" alt="Slide 1" />
+            </a>
+            <a>
+              <img src="/images/part1.png" alt="Slide 1" />
+            </a>
+            <a>
+              <img src="/images/part2.png" alt="Slide 1" />
+            </a>
+            <a>
+              <img src="/images/part3.png" alt="Slide 1" />
+            </a>
+            <a>
+              <img src="/images/part.jpg" alt="Slide 1" />
+            </a>
           </div>
         </div>
       </section>

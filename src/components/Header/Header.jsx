@@ -19,7 +19,7 @@ const Header = () => {
                 </Link>
 
                 <nav className={`nav-links ${menuOpen ? "hidden" : ""}`}>
-                    <NavLink to='/about'>О холдинге</NavLink>
+                    <NavLink to='/about'>О компании</NavLink>
                     <NavLink to='/catalog'>Продукция</NavLink>
                     <NavLink to='/contact'>Контакты</NavLink>
                 </nav>
@@ -36,7 +36,7 @@ const Header = () => {
             </div>
 
             <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
-                <NavLink to='/about' onClick={toggleMenu}>О холдинге</NavLink>
+                <NavLink to='/about' onClick={toggleMenu}>О компании</NavLink>
                 <NavLink to='/catalog' onClick={toggleMenu}>Продукция</NavLink>
                 <NavLink to='/contact' onClick={toggleMenu}>Контакты</NavLink>
                 <Link to='tel:501117733' className="phone">50 111 77 33</Link>
@@ -44,7 +44,7 @@ const Header = () => {
 
             <div className="media-mobile">
                 <NavLink to='/'><i className='bx bx-home-smile' ></i> Домой</NavLink>
-                <NavLink to='/about'><i className='bx bx-package' ></i> О холдинге</NavLink>
+                <NavLink to='/about'><i className='bx bx-package' ></i> О компании</NavLink>
                 <NavLink to='/catalog'><i className='bx bx-basket'></i> Продукция</NavLink>
                 <NavLink to='/contact'><i className='bx bx-universal-access' ></i> Контакты</NavLink>
             </div>

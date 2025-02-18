@@ -24,10 +24,11 @@ const About = () => {
   };
   return (
     <div className="container">
-      {/* First page */}
+      {/* Первая страница */}
       <section className="second">
         <div className="second-box">
           <div className="second-box__left">
+            <h1></h1>
             <h2 data-aos="fade-up">
               «Ахмедов» — это больше, чем просто десерты. Мы создаем мороженое и
               глазированные сырки с любовью к традициям и вниманием к деталям.
@@ -37,189 +38,115 @@ const About = () => {
             </h2>
           </div>
           <div className="second-box__right" data-aos="fade-up">
-            <img src="/images/choco.png" alt="" />
+            <img src="/images/abouthed.jpg" alt="" />
           </div>
         </div>
       </section>
 
-      {/* Holding Haqida */}
+      {/* О компании */}
       <section className="holding" data-aos="fade-up">
         <div className="box holding-box">
           <div className="holding-box__wrapper">
             <div className="holding-box__wrapper__item">
-              <h2>Rojok</h2>
-              <p>
-                ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
-                konfetlarini ishlab chiqarish.
-              </p>
+                <img src="images/logo.png" alt="" />
             </div>
             <div className="holding-box__wrapper__item">
-              <h2>Rojok</h2>
-              <p>
-                ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
-                konfetlarini ishlab chiqarish.
-              </p>
+              <img src="images/kreasymaxabout.jpg" alt="" />
             </div>
             <div className="holding-box__wrapper__item">
-              <h2>Rojok</h2>
-              <p>
-                ESTELLO, VALENCIA, MORELIA, KARAVAN va boshqa shokolad
-                konfetlarini ishlab chiqarish.
-              </p>
+              <img src="images/СЫТЫЙ_ДОМ.jpg" alt="" />
             </div>
             <div className="holding-box__wrapper__item">
-              <h2>Rojok</h2>
-              <p>
-                «ESTELLO», «VALENCIA», «MORELIA», «KARAVAN» va boshqa shokolad
-                konfetlarini ishlab chiqarish.
-              </p>
+                <img src="images/Bombey.jpg" alt="" />
             </div>
           </div>
           <div className="holding-box__description">
-            <h1>Xolding haqida</h1>
+            <h1>О компании</h1>
             <p>
-              {`"Группа компаний «АХМЕДОВ» является одним из лидеров в своей сфере на территории Узбекистана.`}
+              {`Группа компаний «АХМЕДОВ» является одним из лидеров в своей сфере на территории Узбекистана.`}
             </p>
             {/* <a href="/">
-              xolding tuzilmasi <Icons.rightArrow />
-            </a> */}
+        структура холдинга <Icons.rightArrow />
+      </a> */}
           </div>
         </div>
       </section>
 
-      {/* Brendlar */}
+      {/* Бренды */}
       <section className="third">
         <div className="box third-box">
           <div className="third-box__up">
-            <h1 data-aos="fade-right">{">15"} </h1>
-            <h3 data-aos="fade-left">
-              O‘zbekistonda 15 dan ortiq yetakchi brendlar
-            </h3> 
+            <h1 data-aos="fade-right">{""} </h1>
+            <h3 data-aos="fade-left"></h3>
           </div>
           <div className="third-box__down">
             <Slider {...settings1}>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
             </Slider>
             <Slider {...settings2}>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
               <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Slide 1" />
+                <img src="/images/logo.png" alt="Слайд 1" />
               </div>
             </Slider>
           </div>
         </div>
       </section>
 
-      {/* Bizning Messiya */}
+      {/* Наша миссия */}
       <section className="box section section--bg_1 mission">
         <div className="section-top anim active">
-          <h2 className="title title--size_s">Bizning missiya</h2>
+          <h2 className="title title--size_s">Наша миссия</h2>
         </div>
         <div className="mission-inner">
           <div className="mission-image anim anim--image active">
             <picture>
               <img
                 className="lazyload"
-                src="https://nmedov.uz/wp-content/uploads/2023/02/106-3-1-1-768x1152.jpg"
-                width="628"
-                height="780"
+                src="images/krizymaxabout.jpg"
               />
             </picture>
           </div>
@@ -228,20 +155,19 @@ const About = () => {
               <li className="mission-list__item active">
                 <span className="mission-list__count">01</span>
                 <div className="mission-list__content">
-                  Turli toifadagi sifatli va mazali oziq-ovqat mahsulotlarini
-                  taqdim etish.
+                 Создавать натуральное и качественное мороженое, даря людям радость в каждом вкусе. 
                 </div>
               </li>
               <li className="mission-list__item active">
                 <span className="mission-list__count">02</span>
                 <div className="mission-list__content">
-                  Jahon maydonida dong taratgan brendga aylanish{" "}
+                Мы используем только отборное сырье и разрабатываем эксклюзивный ассортимент, чтобы каждый мог найти свое идеальное лакомство. 
                 </div>
               </li>
               <li className="mission-list__item active">
                 <span className="mission-list__count">03</span>
                 <div className="mission-list__content">
-                  Dunyoni yanada lazzatli qilish
+                  Наша цель – сочетать традиции и инновации, предлагая продукт, который радует и вдохновляет.
                 </div>
               </li>
             </ul>
@@ -249,73 +175,66 @@ const About = () => {
         </div>
       </section>
 
-      {/* holding tarixidan */}
-
-      {/* Stategiya */}
-      <section className="st" data-aos="fade-up">
+      {/* Стратегия */}
+      {/* <section className="st" data-aos="fade-up">
         <div className="box st-box">
           <div className="st-box__description">
-            <h1>Strategiya, 2025</h1>
+            <h1>Стратегия, 2025</h1>
             <p>
-              {`"Biz erishgan yutuqlarimizning eng katta tashkil etuvchisi to‘g‘ri qurilgan strategiya. Bugungi kunga kelib, mutaxassislarimiz tomonidan 5 yillik reja ishlab chiqilgan va u 2022 yilning oxiriga qadar amal qiladi.`}
+              {`"Самым важным фактором наших достижений является правильно выстроенная стратегия. На сегодняшний день нашими специалистами разработан 5-летний план, который будет действовать до конца 2022 года.`}
             </p>
           </div>
           <div className="st-box__wrapper">
             <div className="st-box__wrapper__item">
               <i className="bx bx-lg bx-trending-up"></i>{" "}
               <p>
-                Har yili oziq-ovqat mahsulotlarini ishlab chiqarishga oid ikkita
-                yangi loyiha ishga tushiriladi
+                Ежегодно запускаются два новых проекта по производству пищевых
+                продуктов.
               </p>
             </div>
             <div className="st-box__wrapper__item">
               <i className="bx bx-lg bx-trending-up"></i>{" "}
               <p>
-                MDH mamlakatlari o‘rtasida oziq-ovqat mahsulotlarining eng yirik
-                va mashhur ta’minotchisi bo‘lishga intilish.
+                Стремление стать крупнейшим и самым известным поставщиком
+                пищевых продуктов среди стран СНГ.
               </p>
             </div>
             <div className="st-box__wrapper__item">
               <i className="bx bx-lg bx-trending-up"></i>{" "}
               <p>
-                Xorijiy ekspertlar va o‘zaro manfaatli munosabatlarni
-                rivojlantirish muassasalari bilan ishlash tajribasi tufayli o‘z
-                kasbiy mahoratini doimiy tarzda oshirib borish.
+                Постоянное повышение профессионального мастерства за счет опыта
+                работы с зарубежными экспертами и институтами, развивающими
+                взаимовыгодные отношения.
               </p>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Holding Hamkorlari */}
+      {/* Партнеры Холдинга */}
       <section className="fourth">
         <div className="container fourth-container">
           <div className="fourth-container__title">
-            <h1 data-aos="fade-right">Hamkorlarimiz </h1>
-            <a href="/" data-aos="fade-left">
-              batafsil <Icons.rightArrow />
-            </a>
+            <h1 data-aos="fade-right">Наши партнеры </h1>
+            {/* <a href="/" data-aos="fade-left">
+            Подробнее <Icons.rightArrow />
+            </a> */}
           </div>
           <div data-aos="fade-up" className="fourth-container__wrapper">
-            <a href="/">
-              <img src="/images/logo.png" alt="Slide 1" />
-              <p>www.akhmedov.uz</p>
+            <a>
+              <img src="/images/part.png" alt="Slide 1" />
             </a>
-            <a href="/">
-              <img src="/images/logo.png" alt="Slide 1" />
-              <p>www.akhmedov.uz</p>
+            <a>
+              <img src="/images/part1.png" alt="Slide 1" />
             </a>
-            <a href="/">
-              <img src="/images/logo.png" alt="Slide 1" />
-              <p>www.akhmedov.uz</p>
+            <a>
+              <img src="/images/part2.png" alt="Slide 1" />
             </a>
-            <a href="/">
-              <img src="/images/logo.png" alt="Slide 1" />
-              <p>www.akhmedov.uz</p>
+            <a>
+              <img src="/images/part3.png" alt="Slide 1" />
             </a>
-            <a href="/">
-              <img src="/images/logo.png" alt="Slide 1" />
-              <p>www.akhmedov.uz</p>
+            <a>
+              <img src="/images/part.jpg" alt="Slide 1" />
             </a>
           </div>
         </div>
