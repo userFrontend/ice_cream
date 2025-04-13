@@ -10,22 +10,27 @@ import NotFound from "./components/Notfound/Notfound";
 import 'boxicons'
 import "boxicons/css/boxicons.min.css";
 import "./App.css";
+import { useState } from "react";
+import Loader from "./components/Loader/Loader";
 function App() {
+  const [open, setOpen] = useState(false)
   return (
     <>
-      <Header />
-      <main>
-        <Routes>
-          <Route path="/" index element={<Home />} />
-          {/* <Route path="/ishlab-chiqarish" index element={<Ishlab-chiqarish />} /> */}
-          <Route path="/about" index element={<About />} />
-          <Route path="/catalog" index element={<Catalog />} />
-          <Route path="/contact" index element={<Contact />} />
-          <Route path="*" index element={<Navigate to="/" replace />} />
-          {/* <Route path="*" index element={<NotFound />} /> */}
-        </Routes>
-      </main>
-      <Footer />
+      {!open ? <Loader click={setOpen}/> : <div className="body-container">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" index element={<Home />} />
+            {/* <Route path="/ishlab-chiqarish" index element={<Ishlab-chiqarish />} /> */}
+            <Route path="/about" index element={<About />} />
+            <Route path="/catalog" index element={<Catalog />} />
+            <Route path="/contact" index element={<Contact />} />
+            <Route path="*" index element={<Navigate to="/" replace />} />
+            {/* <Route path="*" index element={<NotFound />} /> */}
+          </Routes>
+        </main>
+        <Footer />
+      </div>}
     </>
   );
 }
