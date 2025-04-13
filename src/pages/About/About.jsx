@@ -1,27 +1,97 @@
-import Icons from "../../utils/utils";
 import "./About.scss";
 import Slider from "react-slick";
-
+import React, { useState } from "react";
 const About = () => {
   const settings1 = {
-    infinite: true, // Cheksiz aylanish
-    slidesToShow: 8, // Bir vaqtning o'zida 1 slayd
-    slidesToScroll: 1,
-    autoplay: true, // Avtomatik aylanish
+    infinite: true, // Бесконечное вращение
+    slidesToShow: 8, // Одновременно показывать 8 слайдов
+    autoplay: true, // Автоматическое вращение
     speed: 1000,
     autoplaySpeed: 1000,
-    cssEase: "linear",
+    cssEase: "linear", // Линейная анимация
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 6,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 530,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
   const settings2 = {
     rtl: true,
-    infinite: true, // Cheksiz aylanish
-    slidesToShow: 8, // Bir vaqtning o'zida 1 slayd
-    slidesToScroll: 1,
-    autoplay: true, // Avtomatik aylanish
+    infinite: true, // Бесконечное вращение
+    slidesToShow: 8, // Одновременно показывать 8 слайдов
+    autoplay: true, // Автоматическое вращение
     speed: 1000,
     autoplaySpeed: 1000,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 6,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 530,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
+
+  const historyData = [
+    {
+      year: "2002",
+      text: "Первое частное предприятие 'Ахмедов'. Началось производство мороженого «ЕЩЁ» в пластиковых стаканчиках.",
+    },
+    {
+      year: "2007",
+      text: "Основана компания 'ООО САБЕ'. Запущено производство мороженого 'Kreasy Max', ставшего хитом.",
+    },
+    {
+      year: "2014",
+      text: "Представлено эскимо 'Бомбей' – классическое мороженое на палочке.",
+    },
+    {
+      year: "2017",
+      text: "Создан бренд 'Сытый Дом', начато производство полуфабрикатов.",
+    },
+    {
+      year: "2020",
+      text: "Расширен ассортимент 'Сытый Дом' – теперь бренд выпускает и мороженое.",
+    },
+    {
+      year: "2023",
+      text: "Провели ребрендинг и объединили всё производство под новым, сильным именем — Akhmedov. Это не просто новое название, а символ качества, вкуса и доверия, которое мы заслуживали годами.",
+    },
+  ];
+  const [visibleIndex, setVisibleIndex] = useState(0);
+  const interval = setInterval(() => {
+    setVisibleIndex((prevIndex) => (prevIndex + 1) % historyData.length);
+  }, 3000); // Har 3 sekundda almashadi
+
+  // return () => clearInterval(interval);
   return (
     <div className="container">
       {/* Первая страница */}
@@ -45,10 +115,11 @@ const About = () => {
 
       {/* О компании */}
       <section className="holding" data-aos="fade-up">
+        <h1 className="abouth1">НАШИ БРЕНДЫ</h1>
         <div className="box holding-box">
           <div className="holding-box__wrapper">
             <div className="holding-box__wrapper__item">
-                <img src="images/logo.png" alt="" />
+              <img src="images/logo.png" alt="" />
             </div>
             <div className="holding-box__wrapper__item">
               <img src="images/kreasymaxabout.jpg" alt="" />
@@ -57,13 +128,13 @@ const About = () => {
               <img src="images/СЫТЫЙ_ДОМ.jpg" alt="" />
             </div>
             <div className="holding-box__wrapper__item">
-                <img src="images/Bombey.jpg" alt="" />
+              <img src="images/Bombey.jpg" alt="" />
             </div>
           </div>
           <div className="holding-box__description">
-            <h1>О компании</h1>
+            <h1>наши бренды</h1>
             <p>
-              {`Группа компаний «АХМЕДОВ» является одним из лидеров в своей сфере на территории Узбекистана.`}
+              {`Компания предлагает широкий ассортимент мороженого и глазированных сырков под четырьмя популярными брендами. Каждый бренд создан с любовью к качеству и уникальному вкусу`}
             </p>
             {/* <a href="/">
         структура холдинга <Icons.rightArrow />
@@ -74,65 +145,29 @@ const About = () => {
 
       {/* Бренды */}
       <section className="third">
-        <div className="box third-box">
-          <div className="third-box__up">
+        <div className="container third-container">
+          <div className="third-container__up">
             <h1 data-aos="fade-right">{""} </h1>
             <h3 data-aos="fade-left"></h3>
           </div>
-          <div className="third-box__down">
-            <Slider {...settings1}>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
+        </div>
+        <div data-aos="fade-up" className="third-container__down">
+          <Slider {...settings1}>
+            {/* Слайды */}
+            {Array.from({ length: 16 }).map((_, index) => (
+              <div className="img-box" key={index}>
+                <img src="/images/logo.png" alt={`Слайд ${index + 1}`} />
               </div>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
+            ))}
+          </Slider>
+          <Slider {...settings2}>
+            {/* Слайды */}
+            {Array.from({ length: 16 }).map((_, index) => (
+              <div className="img-box" key={index}>
+                <img src="/images/logo.png" alt={`Слайд ${index + 1}`} />
               </div>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
-              </div>
-            </Slider>
-            <Slider {...settings2}>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="Слайд 1" />
-              </div>
-            </Slider>
-          </div>
+            ))}
+          </Slider>
         </div>
       </section>
 
@@ -144,10 +179,7 @@ const About = () => {
         <div className="mission-inner">
           <div className="mission-image anim anim--image active">
             <picture>
-              <img
-                className="lazyload"
-                src="images/krizymaxabout.jpg"
-              />
+              <img className="lazyload" src="images/krizymaxabout.jpg" />
             </picture>
           </div>
           <div className="mission-content">
@@ -155,23 +187,42 @@ const About = () => {
               <li className="mission-list__item active">
                 <span className="mission-list__count">01</span>
                 <div className="mission-list__content">
-                 Создавать натуральное и качественное мороженое, даря людям радость в каждом вкусе. 
+                  Создавать натуральное и качественное мороженое, даря людям
+                  радость в каждом вкусе.
                 </div>
               </li>
               <li className="mission-list__item active">
                 <span className="mission-list__count">02</span>
                 <div className="mission-list__content">
-                Мы используем только отборное сырье и разрабатываем эксклюзивный ассортимент, чтобы каждый мог найти свое идеальное лакомство. 
+                  Мы используем только отборное сырье и разрабатываем
+                  эксклюзивный ассортимент, чтобы каждый мог найти свое
+                  идеальное лакомство.
                 </div>
               </li>
               <li className="mission-list__item active">
                 <span className="mission-list__count">03</span>
                 <div className="mission-list__content">
-                  Наша цель – сочетать традиции и инновации, предлагая продукт, который радует и вдохновляет.
+                  Наша цель – сочетать традиции и инновации, предлагая продукт,
+                  который радует и вдохновляет.
                 </div>
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      {/* Istoriya holding */}
+      <section className="history">
+        <h2 className="history-title">История компании</h2>
+        <div className="timeline">
+          {historyData.map((item, index) => (
+            <div key={index} className="timeline-item">
+              <div className="circle">{item.year}</div>
+              <div className="content">
+                <p>{item.text}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

@@ -17,12 +17,12 @@ const Footer = () => {
                 <li className="footer-menu__item">История компании</li>
                 {/* <li className="footer-menu__item">Наши проекты</li> */}
               </ul>
-              <a href="/about" className="footer-menu__name">
+              <a href="/contact" className="footer-menu__name">
                 Контакты
               </a>
             </div>
             <div className="footer-menu">
-              <a href="/about" className="footer-menu__name">
+              <a href="/catalog" className="footer-menu__name">
                 Список продуктов
               </a>
               <ul className="footer-menu__list">

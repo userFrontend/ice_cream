@@ -19,6 +19,7 @@ const Header = () => {
                 </Link>
 
                 <nav className={`nav-links ${menuOpen ? "hidden" : ""}`}>
+                    <NavLink to='/ishlab-chiqarish'>Отдел производства</NavLink>
                     <NavLink to='/about'>О компании</NavLink>
                     <NavLink to='/catalog'>Продукция</NavLink>
                     <NavLink to='/contact'>Контакты</NavLink>

@@ -67,10 +67,11 @@ const Home = () => {
           <div className="first-container__left" data-aos="fade-right">
             <h1>Мороженое с семейной историей</h1>
             <p>
-              Группа компаний под единым брендом «AKHMEDOV» является одним из
-              лидеров в пищевой промышленности Узбекистана.
+            Добро пожаловать в компанию Akhmedov!<br/><br/>
+
+            Мы делаем мороженое так как делали бы для своих: честно, вкусно и с душой. Потому что для нас важно, что вы даете своей семье.
             </p>
-            <a href="/">
+            <a href="/about">
               Подробнее <Icons.rightArrow />
             </a>
           </div>
@@ -125,7 +126,7 @@ const Home = () => {
           </Slider>
         </div>
       </section>
-      
+
       <section className="fourth">
         <div className="container fourth-container">
           <div className="fourth-container__title">

@@ -27,7 +27,7 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: white;
+  background-image: url(../public/images/home_bg.png);
   font-family: "Inter";
   user-select: none;
   min-height: 100vh;
@@ -39,7 +39,8 @@ html {
   flex-direction: column;
 }
 main {
-  margin: 120px 0 150px 0;
+  margin: 120px 0 150px 0;   
+  /* site ishlasa ochilish kk */
   flex: 1;
 }
 
