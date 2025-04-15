@@ -1,6 +1,11 @@
 import "./Home.scss";
 import Icons from "../../utils/utils";
 import Slider from "react-slick";
+import Carousel from 'react-bootstrap/Carousel';
+
+const handleSelect = (selectedIndex) => {
+  setIndex(selectedIndex);
+};
 
 const Home = () => {
   const settings1 = {
@@ -63,13 +68,29 @@ const Home = () => {
   return (
     <>
       <section className="first">
+        {/* <Carousel activeIndex={index} onSelect={handleSelect}>
+          {Array.from({ length: 16 }).map((_, idx) => (
+            <Carousel.Item key={idx}>
+              <div className="img-box" style={{ textAlign: "center" }}>
+                <img
+                  src="../../../public/images/banner1.JPG"
+                  alt={`Slide ${idx + 1}`}
+                  style={{ maxWidth: "100%", height: "auto" }}
+                />
+              </div>
+            </Carousel.Item>
+          ))}
+        </Carousel> */}
+        <img src="../../../public/images/banner1.JPG" alt="" />{" "}
         <div className="container first-container">
           <div className="first-container__left" data-aos="fade-right">
             <h1>Мороженое с семейной историей</h1>
             <p>
-            Добро пожаловать в компанию Akhmedov!<br/><br/>
-
-            Мы делаем мороженое так как делали бы для своих: честно, вкусно и с душой. Потому что для нас важно, что вы даете своей семье.
+              Добро пожаловать в компанию Akhmedov!
+              <br />
+              <br />
+              Мы делаем мороженое так как делали бы для своих: честно, вкусно и
+              с душой. Потому что для нас важно, что вы даете своей семье.
             </p>
             <a href="/about">
               Подробнее <Icons.rightArrow />
